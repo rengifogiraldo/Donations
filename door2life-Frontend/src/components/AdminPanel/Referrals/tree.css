@@ -1,0 +1,147 @@
+/* Root Container */
+.tree-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  height: max-content;
+  padding: 7rem;
+  background-color: white; /* Slate-800 for background */
+  color: #bac8d9; /* Light gray for text */
+
+  width: 100vw;
+}
+
+/* Node Container - Flexbox Layout */
+.node-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+.node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  border: 2px solid white; /* Darker gray border */
+  border-radius: 10px;
+  background-color: #59f2d9; /* Green for buttons */
+  width: 145px;
+  color: #000;
+  margin: 0 auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  .email {
+    color: #000;
+  }
+}
+
+.username {
+  font-weight: 600;
+}
+
+.email {
+  color: #ecf2f3;
+  margin-top: 4px;
+}
+
+.referrals-container {
+  display: flex;
+  justify-content: center;
+}
+
+.child-referral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  position: relative;
+}
+
+.child-referral::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 30px;
+  background-color: #bac8d9;
+}
+
+.node-container .tier-2 .node {
+  background-color: #17bea2;
+  color: #000;
+  .email {
+    color: #000;
+  }
+}
+
+.node-container .tier-3 .node {
+  background-color: #107766;
+  color: #fff;
+  .email {
+    color: rgb(227, 226, 226);
+  }
+}
+
+.node-container .tier-4 .node {
+  background-color: #154c42;
+  color: #fff;
+  .email {
+    color: #fff;
+  }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .tree-container {
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .node-container {
+    margin-top: 30px;
+  }
+
+  .node {
+    width: 150px;
+    padding: 10px 15px;
+  }
+
+  .referrals-container {
+    gap: 10px;
+  }
+
+  .child-referral {
+    margin: 0 10px;
+  }
+}
+
+/* Mobile-first - Very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .node {
+    width: 120px;
+    padding: 8px 12px;
+  }
+
+  .referrals-container {
+    gap: 8px;
+  }
+
+  .child-referral {
+    margin: 0 8px;
+  }
+}
