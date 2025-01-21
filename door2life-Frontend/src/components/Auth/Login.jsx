@@ -17,7 +17,7 @@ const Login = () => {
   const [token, setToken] = useState("");
 
   const loginData = {
-    email: email,
+    email: email.toLowerCase(),
     password: password,
   };
 
@@ -32,7 +32,7 @@ const Login = () => {
         await toast
           .promise(
             axios.post(
-              "https://door2life-backend.vercel.app/api/auth/login",
+              "http://localhost:8000/api/auth/login",
               loginData
             ),
             {
@@ -84,7 +84,7 @@ const Login = () => {
               </label>
               <input
                 type="text"
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value.toLowerCase())}
                 placeholder={t("enterEmail")}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />

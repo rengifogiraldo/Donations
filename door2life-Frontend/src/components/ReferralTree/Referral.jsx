@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./tree.css";
@@ -24,10 +24,10 @@ const ReferralTree = () => {
       try {
         const [treeResponse, doorResponse] = await Promise.all([
           axios.get(
-            `https://door2life-backend.vercel.app/api/auth/referrals/${userId}`
+            `/api/auth/referrals/${userId}`
           ),
           axios.get(
-            `https://door2life-backend.vercel.app/api/user/door-status/${userId}`
+            `/api/user/door-status/${userId}`
           ), // Fetch door status API
         ]);
 
@@ -159,6 +159,7 @@ const ReferralTree = () => {
             >
               {button.map((btn) => (
                 <Button
+                key={btn}
                   onClick={() => setView(btn)}
                   className={` ${
                     view === btn ? "bg-green text-black" : "bg-gray"

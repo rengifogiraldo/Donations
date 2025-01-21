@@ -1,11 +1,46 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import axios from "axios";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    comments: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:8000/api/contact/send-email", {
+        to: "contact@openingdoorstolife.org",
+        ...formData,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      console.log('Response:', response);
+
+      toast.success("Message sent successfully!");
+      setFormData({ name: "", phone: "", email: "", comments: "" });
+    } catch (error) {
+      console.error("Error details:", error);
+      toast.error(`Failed to send message: ${error.message}`);
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   return (
     <>
@@ -51,36 +86,56 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="w-full space-y-6 rounded-lg bg-gray-50 shadow-inner-2xl">
+          <form
+            onSubmit={handleSubmit}
+            className="w-full space-y-6 rounded-lg bg-gray-50 shadow-inner-2xl"
+          >
             <div>
               <input
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder={t("contact.form.namePlaceholder")}
                 className="w-full p-2 border rounded-md"
+                required
               />
             </div>
             <div>
               <input
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 placeholder={t("contact.form.phonePlaceholder")}
                 className="w-full p-2 border rounded-md"
+                required
               />
             </div>
             <div>
               <input
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder={t("contact.form.emailPlaceholder")}
                 className="w-full p-2 border rounded-md"
+                required
               />
             </div>
             <div>
               <textarea
+                name="comments"
+                value={formData.comments}
+                onChange={handleChange}
                 placeholder={t("contact.form.commentsPlaceholder")}
                 className="w-full p-2 border rounded-md"
                 rows="4"
+                required
               />
             </div>
-            <Button className="bg-gray">
+            <Button type="submit" className="bg-gray">
               {t("contact.form.submitButton")}
             </Button>
-          </div>
+          </form>
         </div>
       </div>
 

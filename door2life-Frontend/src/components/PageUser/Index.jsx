@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Video from "./Video";
 import Register from "./Register";
 import WorkGroup from "./WorkGroup";
@@ -16,13 +16,11 @@ import { useTranslation } from "react-i18next"; // Import useTranslation hook
 const DoorPages = () => {
   const { t } = useTranslation(); // Get translation function
   const doorPages = [
-    { name: "video" },
     { name: "register" },
     { name: "workGroup" },
     { name: "receiveGifts" },
     { name: "sendGifts" },
     { name: "printCertificate" },
-    { name: "informationOnDonations" },
     { name: "infoDoors" },
   ];
 
@@ -45,13 +43,11 @@ const DoorPages = () => {
       try {
         // Fetch pending requests
         const pendingResponse = await axios.get(
-          `https://door2life-backend.vercel.app/api/messages/pending-requests/${userId}`
+          `/api/messages/pending-requests/${userId}`
         );
 
         // Fetch user data
-        const userref = await axios.get(
-          `https://door2life-backend.vercel.app/api/user/${userId}`
-        );
+        const userref = await axios.get(`/api/user/${userId}`);
 
         // Process user referral code
         if (userref.status === 200 && userref.data?.referralCode) {
@@ -86,7 +82,7 @@ const DoorPages = () => {
         Referral Code : <span className="font-semibold"> {referralCode}</span>
       </h1>
       <div className="flex flex-col mt-1 h-max md:flex-row lg:mx-16 ">
-        <div className="flex-none w-full m-5 overflow-y-auto text-black border rounded-md bg-green md:w-60 lg:w-72 h-96">
+        <div className="flex-none w-full m-5 overflow-y-auto text-black border rounded-md bg-green md:w-60 lg:w-72 max-h-96">
           {doorPages.map((page, index) => (
             <button
               key={index}

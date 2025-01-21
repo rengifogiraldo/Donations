@@ -24,7 +24,7 @@ const Register = () => {
           return;
         }
         const res = await axios.get(
-          `https://door2life-backend.vercel.app/api/auth/referrals/${userId}`
+          `/api/auth/referrals/${userId}`
         );
 
         if (res.status === 200) {
