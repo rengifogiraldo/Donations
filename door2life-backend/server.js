@@ -20,6 +20,7 @@ app.use(
   cors({
     origin: [
       "https://openingdoors2life.org",
+      "https://meek-swan-915441.netlify.app/",
       "http://localhost:5173", // Local development
       "http://localhost:3000", // Alternative local port
     ],
