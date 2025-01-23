@@ -14,7 +14,7 @@ const ReferralTreeCanvas = () => {
     const userId = sessionStorage.getItem("UserId");
     try {
       const response = await axios.get(
-        `https://door2life-backend.vercel.app/api/auth/referrals/673d75c5d4bbde57134bc77a`
+        `https://donations-prdd.onrender.com/api/auth/referrals/673d75c5d4bbde57134bc77a`
       );
       setReferralTree(response.data.referralTree);
     } catch (error) {
