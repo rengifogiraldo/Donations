@@ -81,7 +81,7 @@ const UserTable = () => {
       }
 
       await axios.patch(
-        `https://door2life-backend.vercel.app/api/user/${editingUser._id}`,
+        `https://donations-prdd.onrender.com/api/user/${editingUser._id}`,
         dataToUpdate
       );
 
