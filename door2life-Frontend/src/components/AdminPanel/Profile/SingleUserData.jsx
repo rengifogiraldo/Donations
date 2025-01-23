@@ -36,7 +36,7 @@ const SingleUserData = () => {
 
     try {
       const response = await axios.patch(
-        `https://door2life-backend.vercel.app/api/user/${userData._id}`,
+        `https://donations-prdd.onrender.com/api/user/${userData._id}`,
         {
           ...editFormData,
         }
