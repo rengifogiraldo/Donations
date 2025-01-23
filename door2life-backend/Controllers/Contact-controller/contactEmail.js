@@ -15,7 +15,7 @@ const sendEmail = async (req, res) => {
     });
 
     const mailOptions = {
-      from: email,
+      from: "contact@openingdoorstolife.org",
       to: "contact@openingdoorstolife.org",
       subject: "New Contact Form Submission",
       html: `
