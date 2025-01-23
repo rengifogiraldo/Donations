@@ -6,16 +6,16 @@ const sendEmail = async (req, res) => {
 
     const transporter = nodemailer.createTransport({
       host: "smtp.dreamhost.com",
-      port: 465,
+      port: process.env.EMAIL_PORT,
       secure: true, // true for port 465
       auth: {
-        user: "contact@openingdoorstolife.org",
-        pass: "Op_@2024#_25",
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD,
       },
     });
 
     const mailOptions = {
-      from: "contact@openingdoorstolife.org",
+      from: email,
       to: "contact@openingdoorstolife.org",
       subject: "New Contact Form Submission",
       html: `
