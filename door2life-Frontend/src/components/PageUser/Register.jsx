@@ -60,7 +60,7 @@ const Register = () => {
     // Use toast.promise for better feedback
     await toast.promise(
       axios.patch(
-        `https://door2life-backend.vercel.app/api/user/${editData.userId}`,
+        `https://donations-prdd.onrender.com/api/user/${editData.userId}`,
         updateData
       ),
       {
