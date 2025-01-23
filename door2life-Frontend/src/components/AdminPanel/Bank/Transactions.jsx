@@ -14,7 +14,7 @@ const Transactions = () => {
     const fetchTransactions = async () => {
       try {
         const response = await axios.get(
-          "https://door2life-backend.vercel.app/api/bank/main-bank"
+          "https://donations-prdd.onrender.com/api/bank/main-bank"
         );
         if (response.status === 200) {
           setUser(response.data);
