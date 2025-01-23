@@ -24,7 +24,7 @@ const Register = () => {
           return;
         }
         const res = await axios.get(
-          `/api/auth/referrals/${userId}`
+          `https://donations-prdd.onrender.com/api/auth/referrals/${userId}`
         );
 
         if (res.status === 200) {
