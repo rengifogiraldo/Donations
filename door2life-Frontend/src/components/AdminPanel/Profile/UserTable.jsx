@@ -43,7 +43,7 @@ const UserTable = () => {
   const fetchUsers = async () => {
     try {
       const { data } = await axios.get(
-        "https://door2life-backend.vercel.app/api/user/get"
+        "https://donations-prdd.onrender.com/api/user/get"
       );
       setUsers(data);
     } catch (error) {
