@@ -43,11 +43,11 @@ const DoorPages = () => {
       try {
         // Fetch pending requests
         const pendingResponse = await axios.get(
-          `https://meek-swan-915441.netlify.app/api/messages/pending-requests/${userId}`
+          `https://donations-prdd.onrender.com/api/messages/pending-requests/${userId}`
         );
 
         // Fetch user data
-        const userref = await axios.get(`https://meek-swan-915441.netlify.app/api/user/${userId}`);
+        const userref = await axios.get(`https://donations-prdd.onrender.com/api/user/${userId}`);
 
         // Process user referral code
         if (userref.status === 200 && userref.data?.referralCode) {
