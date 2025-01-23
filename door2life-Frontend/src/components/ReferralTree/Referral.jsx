@@ -24,10 +24,10 @@ const ReferralTree = () => {
       try {
         const [treeResponse, doorResponse] = await Promise.all([
           axios.get(
-            `/api/auth/referrals/${userId}`
+            `https://donations-prdd.onrender.com/api/auth/referrals/${userId}`
           ),
           axios.get(
-            `/api/user/door-status/${userId}`
+            `https://donations-prdd.onrender.com/api/user/door-status/${userId}`
           ), // Fetch door status API
         ]);
 
