@@ -18,7 +18,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8000/api/contact/send-email", {
+      const response = await axios.post("https://donations-prdd.onrender.com/api/contact/send-email", {
         to: "contact@openingdoorstolife.org",
         ...formData,
         headers: {
