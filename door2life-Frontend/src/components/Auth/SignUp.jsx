@@ -103,7 +103,7 @@ const SignUp = () => {
     await toast
       .promise(
         axios.post(
-          "https://door2life-backend.vercel.app/api/auth/register",
+          "https://donations-prdd.onrender.com/api/auth/register",
           registerData
         ),
         {
