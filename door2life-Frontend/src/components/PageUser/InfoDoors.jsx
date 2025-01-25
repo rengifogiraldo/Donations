@@ -40,7 +40,7 @@ const InfoDoors = () => {
           <h2 className="mb-3 text-base font-bold md:text-lg lg:text-xl">
             {t(selectedDoor.button)}
           </h2>
-          <p className="mb-4 text-sm text-gray-700 sm:text-base md:text-lg">
+          <p className="mb-4 text-sm font-bold text-gray-700 sm:text-base md:text-lg">
             {t(selectedDoor.description)}
           </p>{" "}
           {/* Translated description */}
