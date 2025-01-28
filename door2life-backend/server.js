@@ -25,7 +25,7 @@ app.use(
       "http://localhost:3000", // Alternative local port
     ],
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    methods: ["GET", "POST", "PUT", "DELETE",'PATCH',"PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     preflightContinue: false,
   optionsSuccessStatus: 204
