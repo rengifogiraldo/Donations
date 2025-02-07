@@ -19,7 +19,7 @@ const ReferralTreeCanvas = () => {
     const userId = sessionStorage.getItem("UserId");
     try {
       const response = await axios.get(
-        `https://donations-prdd.onrender.com/api/auth/referrals/${userId}`
+        `${import.meta.env.VITE_BACKEND_HOST}/api/auth/referrals/${userId}`,
       );
       setReferralTree(response.data.referralTree);
     } catch (error) {
@@ -196,7 +196,7 @@ const ReferralTreeCanvas = () => {
       canvas.getContext("2d"),
       referralTree,
       canvas.width / 2,
-      canvas.height / 2
+      canvas.height / 2,
     );
 
     // Check third orbit nodes

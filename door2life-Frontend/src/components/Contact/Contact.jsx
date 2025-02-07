@@ -18,14 +18,17 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://donations-prdd.onrender.com/api/contact/send-email", {
-        to: "contact@openingdoorstolife.org",
-        ...formData,
-        headers: {
-          "Content-Type": "application/json",
+      const response = await axios.post(
+        `${import.meta.env.VITE_BACKEND_HOST}/api/contact/send-email`,
+        {
+          to: "contact@openingdoorstolife.org",
+          ...formData,
+          headers: {
+            "Content-Type": "application/json",
+          },
         },
-      });
-      console.log('Response:', response);
+      );
+      console.log("Response:", response);
 
       toast.success("Message sent successfully!");
       setFormData({ name: "", phone: "", email: "", comments: "" });

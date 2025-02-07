@@ -20,7 +20,7 @@ const AdminReferrals = () => {
     const fetchReferralTree = async () => {
       try {
         const response = await axios.get(
-          `https://donations-prdd.onrender.com/api/auth/referrals/673d75c5d4bbde57134bc77a`
+          `${import.meta.env.VITE_BACKEND_HOST}/api/auth/referrals/673d75c5d4bbde57134bc77a`,
         );
         setReferralTree(response.data.referralTree);
         setCurrentNode(response.data.referralTree); // Start with the root node

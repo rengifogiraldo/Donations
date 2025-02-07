@@ -14,7 +14,7 @@ const MainBank = () => {
     const fetchBalance = async () => {
       // Simulate API response
       const response = await axios.get(
-        "https://donations-prdd.onrender.com/api/bank/main-bank"
+        `${import.meta.env.VITE_BACKEND_HOST}/api/bank/main-bank`,
       );
       const bankAmount = response.data.length * 50;
 

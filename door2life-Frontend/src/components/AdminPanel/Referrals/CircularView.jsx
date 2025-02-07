@@ -14,7 +14,7 @@ const ReferralTreeCanvas = () => {
     const userId = sessionStorage.getItem("UserId");
     try {
       const response = await axios.get(
-        `https://donations-prdd.onrender.com/api/auth/referrals/673d75c5d4bbde57134bc77a`
+        `${import.meta.env.VITE_BACKEND_HOST}/api/auth/referrals/673d75c5d4bbde57134bc77a`,
       );
       setReferralTree(response.data.referralTree);
     } catch (error) {
@@ -184,7 +184,7 @@ const ReferralTreeCanvas = () => {
           <h2 className="mx-auto text-4xl text-black">{t("Referral Tree")}</h2>
           <h2 className="mx-auto mt-2 text-sm text-center text-black">
             {t(
-              "Complete your 3rd Generation & Send donations request By Clicking on it"
+              "Complete your 3rd Generation & Send donations request By Clicking on it",
             )}
           </h2>
         </div>

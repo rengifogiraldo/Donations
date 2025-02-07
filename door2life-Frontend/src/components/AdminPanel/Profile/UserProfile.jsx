@@ -17,10 +17,10 @@ const UserProfile = () => {
       try {
         const userId = "673d75c5d4bbde57134bc77a";
         const response = await axios.get(
-          `https://donations-prdd.onrender.com/api/user/${userId}`
+          `${import.meta.env.VITE_BACKEND_HOST}/api/user/${userId}`,
         );
         const bankResponse = await axios.get(
-          "https://donations-prdd.onrender.com/api/bank/main-bank"
+          `${import.meta.env.VITE_BACKEND_HOST}/api/bank/main-bank`,
         );
         if (bankResponse.status === 200) {
           setBankData(bankResponse.data);

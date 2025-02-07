@@ -24,7 +24,7 @@ const Register = () => {
           return;
         }
         const res = await axios.get(
-          `https://donations-prdd.onrender.com/api/auth/referrals/${userId}`
+          `${import.meta.env.VITE_BACKEND_HOST}/api/auth/referrals/${userId}`,
         );
 
         if (res.status === 200) {
@@ -60,14 +60,14 @@ const Register = () => {
     // Use toast.promise for better feedback
     await toast.promise(
       axios.patch(
-        `https://donations-prdd.onrender.com/api/user/${editData.userId}`,
-        updateData
+        `${import.meta.env.VITE_BACKEND_HOST}/api/user/${editData.userId}`,
+        updateData,
       ),
       {
         pending: "Saving changes...",
         success: "User updated successfully!",
         error: "Failed to update user.",
-      }
+      },
     );
 
     // Update referrals list
@@ -75,8 +75,8 @@ const Register = () => {
       referrals.map((referral) =>
         referral._id === editData._id
           ? { ...referral, ...updateData }
-          : referral
-      )
+          : referral,
+      ),
     );
     setEditModalOpen(false);
   };

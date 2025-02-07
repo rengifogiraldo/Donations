@@ -32,8 +32,8 @@ const Login = () => {
         await toast
           .promise(
             axios.post(
-              "https://donations-prdd.onrender.com/api/auth/login",
-              loginData
+              `${import.meta.env.VITE_BACKEND_HOST}/api/auth/login`,
+              loginData,
             ),
             {
               pending: t("loginInProgress"), // Translation for "Logging in..."
@@ -48,7 +48,7 @@ const Login = () => {
               pauseOnHover: true,
               draggable: true,
               theme: "light",
-            }
+            },
           )
           .then((response) => {
             const userId = response.data.user._id;

@@ -36,10 +36,10 @@ const SingleUserData = () => {
 
     try {
       const response = await axios.patch(
-        `https://donations-prdd.onrender.com/api/user/${userData._id}`,
+        `${import.meta.env.VITE_BACKEND_HOST}/api/user/${userData._id}`,
         {
           ...editFormData,
-        }
+        },
       );
       setUserData(response.data);
       toast.success(t("userUpdated"));

@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./tree.css";
@@ -24,10 +24,10 @@ const ReferralTree = () => {
       try {
         const [treeResponse, doorResponse] = await Promise.all([
           axios.get(
-            `https://donations-prdd.onrender.com/api/auth/referrals/${userId}`
+            `${import.meta.env.VITE_BACKEND_HOST}/api/auth/referrals/${userId}`,
           ),
           axios.get(
-            `https://donations-prdd.onrender.com/api/user/door-status/${userId}`
+            `${import.meta.env.VITE_BACKEND_HOST}/api/user/door-status/${userId}`,
           ), // Fetch door status API
         ]);
 
@@ -59,7 +59,7 @@ const ReferralTree = () => {
               const childResult = renderTree(
                 child,
                 tier + 1,
-                acc.displayedCount
+                acc.displayedCount,
               );
               return {
                 renderedNodes: [
@@ -69,7 +69,7 @@ const ReferralTree = () => {
                 displayedCount: childResult.displayedCount,
               };
             },
-            { renderedNodes: [], displayedCount }
+            { renderedNodes: [], displayedCount },
           )
         : { renderedNodes: [], displayedCount };
 
@@ -148,7 +148,7 @@ const ReferralTree = () => {
           <h2 className="mx-auto text-4xl text-black">{t("Referral Tree")}</h2>
           <h2 className="mx-auto mt-2 text-sm text-center text-black ">
             {t(
-              "Complete your 3rd Generation & Send donations request By Clicking on it"
+              "Complete your 3rd Generation & Send donations request By Clicking on it",
             )}
           </h2>
         </div>
@@ -159,7 +159,7 @@ const ReferralTree = () => {
             >
               {button.map((btn) => (
                 <Button
-                key={btn}
+                  key={btn}
                   onClick={() => setView(btn)}
                   className={` ${
                     view === btn ? "bg-green text-black" : "bg-gray"

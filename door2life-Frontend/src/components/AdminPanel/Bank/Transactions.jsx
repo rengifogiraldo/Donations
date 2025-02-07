@@ -14,7 +14,7 @@ const Transactions = () => {
     const fetchTransactions = async () => {
       try {
         const response = await axios.get(
-          "https://donations-prdd.onrender.com/api/bank/main-bank"
+          `${import.meta.env.VITE_BACKEND_HOST}/api/bank/main-bank`,
         );
         if (response.status === 200) {
           setUser(response.data);

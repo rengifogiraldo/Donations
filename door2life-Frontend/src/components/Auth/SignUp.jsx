@@ -103,8 +103,8 @@ const SignUp = () => {
     await toast
       .promise(
         axios.post(
-          "https://donations-prdd.onrender.com/api/auth/register",
-          registerData
+          `${import.meta.env.VITE_BACKEND_HOST}/api/auth/register`,
+          registerData,
         ),
         {
           success: t("signUp.accountCreated"),
@@ -124,7 +124,7 @@ const SignUp = () => {
           pauseOnHover: true,
           draggable: true,
           theme: "light",
-        }
+        },
       )
       .then(() => {
         setTimeout(() => {

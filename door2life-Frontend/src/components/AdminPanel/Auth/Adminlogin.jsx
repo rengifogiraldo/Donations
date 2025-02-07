@@ -36,8 +36,8 @@ const AdminLogin = () => {
     await toast
       .promise(
         axios.post(
-          "https://donations-prdd.onrender.com/api/auth/admin/login",
-          loginData
+          `${import.meta.env.VITE_BACKEND_HOST}/api/auth/admin/login`,
+          loginData,
         ),
         {
           pending: t("Logging in..."),
@@ -52,7 +52,7 @@ const AdminLogin = () => {
           pauseOnHover: true,
           draggable: true,
           theme: "light",
-        }
+        },
       )
       .then((response) => {
         if (response.status === 200) {

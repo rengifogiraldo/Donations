@@ -9,7 +9,7 @@ const DonationTable = () => {
       try {
         const userId = sessionStorage.getItem("UserId");
         const response = await axios.get(
-          `https://donations-prdd.onrender.com/api/donate/get/${userId}`
+          `${import.meta.env.VITE_BACKEND_HOST}/api/donate/get/${userId}`,
         );
         setDonations(response.data);
       } catch (error) {
@@ -48,7 +48,7 @@ const DonationTable = () => {
           <tbody>
             {doorValues.map((door) => {
               const donation = donations.find(
-                (d) => d.doorNumber === door.door
+                (d) => d.doorNumber === door.door,
               );
               return (
                 <tr key={door.door} className="border-b hover:bg-gray-100">

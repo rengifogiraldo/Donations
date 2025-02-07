@@ -20,7 +20,7 @@ const ReceiveGifts = () => {
         }
 
         const response = await axios.get(
-          `https://donations-prdd.onrender.com/api/user/${userId}`
+          `${import.meta.env.VITE_BACKEND_HOST}/api/user/${userId}`,
         );
 
         if (response.status === 200) {
@@ -42,7 +42,7 @@ const ReceiveGifts = () => {
   const currentDoor =
     data?.doorStatus &&
     Object.keys(data.doorStatus).find(
-      (door) => data.doorStatus[door] == false // Adjust based on your status logic
+      (door) => data.doorStatus[door] == false, // Adjust based on your status logic
     );
 
   if (loading) {

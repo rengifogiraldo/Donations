@@ -43,7 +43,7 @@ const UserTable = () => {
   const fetchUsers = async () => {
     try {
       const { data } = await axios.get(
-        "https://donations-prdd.onrender.com/api/user/get"
+        `${import.meta.env.VITE_BACKEND_HOST}/api/user/get`,
       );
       setUsers(data);
     } catch (error) {
@@ -81,8 +81,8 @@ const UserTable = () => {
       }
 
       await axios.patch(
-        `https://donations-prdd.onrender.com/api/user/${editingUser._id}`,
-        dataToUpdate
+        `${import.meta.env.VITE_BACKEND_HOST}/api/user/${editingUser._id}`,
+        dataToUpdate,
       );
 
       // Refresh the users list and close modal
