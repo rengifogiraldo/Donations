@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:80/health"]
-      interval: 30s
+      interval: 300s
       timeout: 10s
       retries: 3
 
@@ -24,14 +24,15 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - MONGODB_URI=mongodb+srv://door2life:door2life@door2life.obnno.mongodb.net/test
+      #- MONGODB_URI=mongodb+srv://door2life:door2life@door2life.obnno.mongodb.net/test
+      - MONGODB_URI=mongodb://localhost:27017/test
       - PORT=8000
       - JWT_TOKEN=your_jwt_secret_here  # Add JWT token for auth
       - NODE_ENV=production
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
-      interval: 30s
+      interval: 300s
       timeout: 10s
       retries: 3
 
