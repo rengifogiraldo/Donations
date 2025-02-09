@@ -25,7 +25,7 @@ services:
       - "8000:8000"
     environment:
       #- MONGODB_URI=mongodb+srv://door2life:door2life@door2life.obnno.mongodb.net/test
-      - MONGODB_URI=mongodb://localhost:27017/test
+      - MONGODB_URI=mongodb://mongodb:27017/test
       - PORT=8000
       - JWT_TOKEN=your_jwt_secret_here  # Add JWT token for auth
       - NODE_ENV=production
@@ -43,11 +43,11 @@ services:
     environment:
       - MONGO_INITDB_DATABASE=test
     volumes:
-      - mongodb_local_data:/data/db
+      - mongodb_prod_data:/data/db
 
 volumes:
-  mongodb_local_data:
-    name: door2life_local_mongodb
+  mongodb_prod_data:
+    name: door2life_prod_mongodb  # Named volume for production dat
 networks:
   default:
     name: door2life_network
