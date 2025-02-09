@@ -2,6 +2,8 @@ require("dotenv").config();
 const connectDb = require("./utils/db");
 const express = require("express");
 const cors = require("cors");
+const mongoose = require('mongoose'); // Add this
+
 
 const router = require("./Routes/auth-router/auth-router");
 const adminRoutes = require("./Routes/auth-router/adminRouter");
@@ -14,7 +16,14 @@ const contactRouter = require("./Routes/Contact-Router/contactRouter");
 const app = express();
 
 const PORT = 8000;
-
+// Add this to check MongoDB connection
+mongoose.connect(process.env.MONGODB_URI)
+  .then(() => {
+    console.log('Connected to MongoDB:', process.env.MONGODB_URI);
+  })
+  .catch((err) => {
+    console.error('MongoDB connection error:', err);
+  });
 app.use(express.json());
 app.use(
   cors({
@@ -25,10 +34,10 @@ app.use(
       "http://localhost:3000", // Alternative local port
     ],
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE",'PATCH',"PATCH", "OPTIONS"],
+    methods: ["GET", "POST", "PUT", "DELETE", 'PATCH', "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     preflightContinue: false,
-  optionsSuccessStatus: 204
+    optionsSuccessStatus: 204
   })
 );
 
