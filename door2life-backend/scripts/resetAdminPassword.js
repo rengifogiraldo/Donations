@@ -69,4 +69,4 @@ async function resetUserPassword() {
     }
 }
 updatePasswords();
-resetUserPassword();
+// resetUserPassword();
