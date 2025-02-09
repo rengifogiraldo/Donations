@@ -5,7 +5,8 @@ const User = require('../models/user-model');
 async function updatePasswords() {
     try {
         // Connect to your local MongoDB
-        await mongoose.connect('mongodb://localhost:27017/test');
+        // await mongoose.connect('mongodb://localhost:27017/test');
+        await mongoose.connect('mongodb+srv://door2life:door2life@cluster0.htvet.mongodb.net/test');
 
         // New password to set for both admins
         const newPassword = 'admin123';
@@ -68,5 +69,5 @@ async function resetUserPassword() {
         await mongoose.disconnect();
     }
 }
-updatePasswords();
-// resetUserPassword();
+// updatePasswords();
+resetUserPassword();

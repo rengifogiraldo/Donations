@@ -32,6 +32,7 @@ app.use(
       "https://meek-swan-915441.netlify.app",
       "http://localhost:5173", // Local development
       "http://localhost:3000", // Alternative local port
+      "http://89.117.23.68:5173'",
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", 'PATCH', "PATCH", "OPTIONS"],
