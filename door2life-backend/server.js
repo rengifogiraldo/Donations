@@ -32,7 +32,7 @@ app.use(
       "https://meek-swan-915441.netlify.app",
       "http://localhost:5173", // Local development
       "http://localhost:3000", // Alternative local port
-      "http://89.117.23.68:5173'",
+      "http://89.117.23.68:5173",  // Added your server IP
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", 'PATCH', "PATCH", "OPTIONS"],
@@ -41,6 +41,12 @@ app.use(
     optionsSuccessStatus: 204
   })
 );
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
 
 app.options("*", cors()); // Enable pre-flight for all routes
 
