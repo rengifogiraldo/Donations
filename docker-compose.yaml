@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: 
+      context: ./door2life-Frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8173:80"
+    environment:
+      - VITE_BACKEND_HOST=http://backend:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  backend:
+    build: 
+      context: ./door2life-backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URI=mongodb+srv://door2life:door2life@door2life.obnno.mongodb.net/test
+      - PORT=8000
+      - VITE_BACKEND_HOST=http://localhost:8000
+    restart: unless-stopped
+
+networks:
+  default:
+    name: door2life_network

@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: 
+      context: ./door2life-Frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8173:80"
+    environment:
+      - VITE_BACKEND_HOST=http://backend:8000
+    volumes:
+      - ./door2life-Frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+
+  backend:
+    build: 
+      context: ./door2life-backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/test
+      - PORT=8000
+      - VITE_BACKEND_HOST=http://localhost:8000
+    volumes:
+      - ./door2life-backend:/app
+      - /app/node_modules
+    depends_on:
+      - mongodb
+    restart: always
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=test
+    volumes:
+      - mongodb_local_data:/data/db
+
+volumes:
+  mongodb_local_data:
+    name: door2life_local_mongodb
+
+networks:
+  default:
+    name: door2life_local_network
