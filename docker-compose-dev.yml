@@ -6,7 +6,7 @@ services:
       context: ./door2life-Frontend
       dockerfile: Dockerfile
     ports:
-      - "8173:80"
+      - "5173:80"
     environment:
       - VITE_BACKEND_HOST=http://backend:8000
     volumes:
@@ -25,6 +25,7 @@ services:
       - MONGODB_URI=mongodb://mongodb:27017/test
       - PORT=8000
       - VITE_BACKEND_HOST=http://localhost:8000
+      - JWT_TOKEN=8t7rdg87r98t74t54957
     volumes:
       - ./door2life-backend:/app
       - /app/node_modules
