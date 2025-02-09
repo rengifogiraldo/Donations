@@ -36,6 +36,18 @@ services:
       timeout: 10s
       retries: 3
 
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=test
+    volumes:
+      - mongodb_local_data:/data/db
+
+volumes:
+  mongodb_local_data:
+    name: door2life_local_mongodb
 networks:
   default:
     name: door2life_network
