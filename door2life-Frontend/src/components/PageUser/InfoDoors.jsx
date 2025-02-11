@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import doorsData from "../DataofDoors";
 import { Button } from "../ui/button";
@@ -27,7 +27,7 @@ const InfoDoors = () => {
               selectedDoor === door
                 ? "bg-greengrass text-white"
                 : "bg-slate-800 text-white hover:bg-greengrass"
-            } 
+            }
             hover:shadow-lg  focus:outline-none`}
           >
             {t(door.button)} {/* Translated button text */}
