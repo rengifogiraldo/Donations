@@ -4,15 +4,12 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
   server: {
-    // Add allowedHosts configuration
-    allowedHosts: true,
     proxy: {
       "/api": {
         target: "https://door2life-backend.vercel.app",
