@@ -10,6 +10,8 @@ export default defineConfig({
     },
   },
   server: {
+    // Add allowedHosts configuration
+    allowedHosts: ['openingdoors2life.org'],
     proxy: {
       "/api": {
         target: "https://door2life-backend.vercel.app",
