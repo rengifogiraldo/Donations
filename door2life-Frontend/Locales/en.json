@@ -34,7 +34,6 @@
     "speakWithMonica": "Speak with MONICA REYES",
     "speakWithJuan": "Speak with JUAN REYES",
     "phone": "(863) 623-6162"
-
   },
   "beliefs": {
     "title": "Our Beliefs",
@@ -228,7 +227,23 @@
     "sendGifts": "Send Gifts",
     "printCertificate": "Print Certificate",
     "informationOnDonations": "Information On Donations",
-    "infoDoors": "Info Doors"
+    "infoDoors": "Info Doors",
+    "doors": {
+      "1": "Door № 1 the gift will be $50, and you will receive $400 from your  team of 8 people who are at the bottom of the 15 people, who will  also send you $50 each for a total of $400. Reserve $200 for door   № 2. Take $100. And $100 will be sent to the foundation. How to take any business from good   to extraordinary. On this 14 Doors  foundation, we shape the present of   all young people today, so that they  live an extraordinary life.",
+      "2": "Door № 2 You will send $200 and receive $1,600 always from the 8   that are on your team; reserve $600 for Door № 3. Take $500 for  yourself. The rest will be sent to the foundation. Dear young people:  Welcome to the manual for your  successful start.   Ask yourself three questions:  1) Does it work? 2) Is it easy?   3) Can I do it?   (The key is to invite people to listen)",
+      "3": "Door № 3 you will send $600 and receive $4,800 from your team of 8  people who responded to you; reserve $1,800 for Door № 4.  Take $1,500 for yourself. The rest will be sent to the foundation. 1) What we do NOT require:   2) No gift giving limits  3) No monthly dues   4) No mandatory schedules   5) No annual renewals   6) No employees or bosses  7) Be generous with your gifts",
+      "4": "Door № 4 you will send $1,800 and you will receive $14,400.  Reserve $3,000 for door № 5. Take $6,500 for yourself.  The rest will be sent to the foundation. Act today and earn up to $100,000 for each membership.",
+      "5": "Door № 5 you will send $3,000 and receive $24,000, reserve $4,000 for Door № 6. Take $10,000 for yourself. Send the rest to the foundation. Dear young ladies and young men, if you are intelligent,  you can live an extraordinary life here. ",
+      "6": "Door № 6: You will send $4,000 and receive $32,000, reserve  $12,000  to complete Door № 7. Take $10,000 for yourself.   Send the rest to the foundation.",
+      "7": "Door № 7 and you will receive $96,000. Take $21,400 for yourself.  The rest will be sent to the foundation. You have received from  door № 1 to door № 7 $50,000.",
+      "8": "Door № 8 the gift will be $50, and you will receive $400 from your  team of 8 people who are at the bottom of the 15 people, who will   also send you $50 each for a total of $400. Reserve $200 for door  № 2. And $100 for yourself. And $100 will be sent to the foundation. ",
+      "9": "Door № 9: You will send $200 and receive $1,600 always from the 8  that are on your team; reserve $600 for door № 10. At door № 9:  Take $500 for yourself. Send the rest to the foundation.  ",
+      "10": "Door № 10 you will send $600 and receive $4,800 from your team   of 8 people who respond to you; reserve $1,800 for Door № 11. Door № 10 takes $1,500 for yourself and sends the rest to the foundation. ",
+      "11": "Door № 11 you will send $1,800 and you will receive $14,400  reserve $3,000 for door № 12. Door № 11 take $6,500 for yourself   the rest send it to the foundation. ",
+      "12": "Door № 12 you will send $3,000 and receive $24,000, reserve  $4,000 for Door № 13. Door № 12 takes $10,000 for yourself the   rest send it to the foundation. ",
+      "13": "Door № 13. You will send $4,000 and receive $32,000, reserve   $12,000 to complete Door № 14. Door № 13 takes $10,000 for   yourself and sends the rest to the foundation.",
+      "14": "Door № 14 and you will receive $96,000.00 upon completion of  Door № 14. We will restart at Door 1 as we did in the beginning.  Door № 14. Take $21,400 for yourself the rest send to the foundation"
+    }
   },
 
   "videoTitle": "How to register?",
@@ -254,7 +269,7 @@
   "printCertificateDescription": "Print your \"Opening Doors to Life\" Membership Certificate",
   "printCertificateInstructions": "Click on the button to print the certificate",
   "print": "Print",
- "certificateHeader": "DONATION CERTIFICATE OF:",
+  "certificateHeader": "DONATION CERTIFICATE OF:",
   "certificateUsernamePhone": "{{username}} TEL: {{phone}}",
   "certificateWebsite": "www.openingdoorstolife.org",
   "certificateAddress1": "3693 NW 8TH AVE OKEECHOBEE",

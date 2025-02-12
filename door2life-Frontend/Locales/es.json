@@ -26,14 +26,13 @@
     "copyright": "Derechos de autor © 2025 Abriendo puertas a la vida",
     "aboutUs": "Sobre nosotros",
     "aboutUsdesc": "Somos un grupo con el único propósito de ayudarnos mutuamente, a nuestros seres queridos y a todas aquellas personas con limitaciones económicas que deseen unirse a esta familia de miembros exclusivos y participar en una maravillosa oportunidad que nos permite encontrar alivio financiero de puerta a puerta.",
-     "hyaf": "H.Y.A.F",
-      "hayfdesc": "Juan Reyes y Monica Reyes son los cofundadores de la Fundación Hispanoamericana de la Juventud. ¡Tenemos muchas noticias emocionantes sobre esta maravillosa fundación que ayuda a nuestra juventud hispanoamericana de hoy!",
-      "office": "Oficina",
-      "mainOfficePhone": "(863) 623-4220 (Oficina principal)",
-"speakWithMonica": "Hablar con MONICA REYES",
+    "hyaf": "H.Y.A.F",
+    "hayfdesc": "Juan Reyes y Monica Reyes son los cofundadores de la Fundación Hispanoamericana de la Juventud. ¡Tenemos muchas noticias emocionantes sobre esta maravillosa fundación que ayuda a nuestra juventud hispanoamericana de hoy!",
+    "office": "Oficina",
+    "mainOfficePhone": "(863) 623-4220 (Oficina principal)",
+    "speakWithMonica": "Hablar con MONICA REYES",
     "speakWithJuan": "Hablar con JUAN REYES",
     "phone": "(863) 623-6162"
-
   },
   "beliefs": {
     "title": "Nuestras Creencias",
@@ -228,7 +227,23 @@
     "sendGifts": "Enviar regalos",
     "printCertificate": "Imprimir certificado",
     "informationOnDonations": "Información sobre donaciones",
-    "infoDoors": "Puertas de información"
+    "infoDoors": "Puertas de información",
+    "doors": {
+      "1": "Puerta № 1 el regalo será de $50 y recibirás $400 de tu equipo de 8  personas que se encuentran al final de las 15 personas, quienes también te enviaran $50 cada uno para un total de $400. Reservar $200  para la puerta № 2. Toma $100. Y $100 serán enviados a la fundación. Cómo llevar cualquier negocio de  buenos a extraordinarios. En esta base  de 14 Puertas, moldeamos el presente  de todos los jóvenes de hoy, para que  vivan una vida extraordinaria",
+      "2": "Puerta № 2 Enviaras $200 y recibirás $1,600 siempre de los 8 que  son de tu equipo; reservar $600 para la Puerta № 3. Toma $500  para ti. El resto serán enviados a la fundación. Estimados jóvenes:  Bienvenido al manual de su  inicio Exitoso.  Hágase tres preguntas:  1) ¿Funciona?  2) ¿Es sencillo?  3) ¿Yo lo puedo hacer?  (La clave invitar para escuchar)",
+      "3": "Puerta № 3: Enviaras $600 y recibirás $4,800 de tu equipo de las 8  personas que les con responde enviarte; reservar $1,800 para la  Puerta № 4 Toma $1,500 para ti. El resto serán enviados a la fundación. 1) Lo que NO requerimos:  2) No hay limites para dar regalos  3) No hay cuotas mensuales  4) No hay horarios obligatorios  5) No hay renovaciones anuales  6) No hay empleados ni patrones  7) Sea generoso con sus regalos",
+      "4": "Puerta № 4 enviaras $1,800 y recibirás $14,400 reservar $3,000 para la puerta № 5 Toma $6,500  para ti.  El resto serán enviado a la fundación. Actúa hoy y por cada membresía gana hasta $100,000.",
+      "5": "Puerta № 5 enviaras $3,000 y recibirás $24,000, reservar $4,000  para la Puerta № 6. Toma $10,000 para ti.  Lo demás envíalo a la fundación. Queridas jovencitas y queridos jóvenes, si sois inteligentes, aquí podrán vivir una vida extra ordinaria.",
+      "6": "Puerta № 6: Enviaras $4,000 y recibirás $32,000, reservar $12,000  para completar la Puerta № 7. Toma $10,000.  Para ti. Lo demás envíalo a la fundación ",
+      "7": "Puerta № 7 y recibirás $96,000. Toma $21,400 para ti. Lo demás será  envíalo a la fundación. Has recibido de la puerta 1 a la puerta 7 $50,000 ",
+      "8": "Puerta № 8 el regalo será de $50 y recibirás $400 de tu equipo  de 8 personas que se encuentran al final de las 15 personas, quienes también te enviaran $50 cada uno para un total de $400. Reservar $200  para la puerta № 2. Y $100 para ti. Y $100 serán enviados a la fundación",
+      "9": "Puerta № 9: Enviaras $200 y recibirás $1,600 siempre de los 8  que son de tu equipo; reservar $600 para la puerta № 10 en la  puerta № 9: Toma $500 para ti. Lo demás envíalo a la fundación. ",
+      "10": "Puerta № 10 enviaras $600 y recibirás $4,800 de tu equipo de 8  personas que les con responde enviarte; reservar $1,800  para la Puerta № 11. Puerta № 10 toma $1,500.  Para ti el resto envíalo a la fundación. ",
+      "11": "Puerta № 11 enviaras $1,800 y recibirás $14,400 reservar $3,000  para la puerta № 12. Puerta № 11 toma $6,500.  Para ti el resto envíalo a la fundación.",
+      "12": "Puerta № 12 enviaras $3,000 y recibirás $24,000, reservar $4,000  para la Puerta № 13. Puerta № 12 toma $10,000.  Para ti el resto envíalo a la fundación.",
+      "13": "Puerta № 13. Enviaras $4,000 y recibirás $32,000, reservar $12,000  para completar la Puerta № 14. Puerta № 13 toma $10,000  para ti el resto envíalo a la fundación. ",
+      "14": "Puerta № 14 y recibirás $96,000,00 al completar la puerta № 14.  Reiniciaremos en la puerta 1 como lo hicimos al principio.  Puerta № 14. Toma $21,400 para ti el resto envíalo a la fundación"
+    }
   },
 
   "videoTitle": "¿Cómo registrarse?",

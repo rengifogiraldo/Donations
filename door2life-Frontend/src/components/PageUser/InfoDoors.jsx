@@ -41,7 +41,8 @@ const InfoDoors = () => {
             {t(selectedDoor.button)}
           </h2>
           <p className="mb-4 text-sm font-bold text-gray-700 sm:text-base md:text-lg">
-            {t(selectedDoor.description)}
+            {/* {t(selectedDoor.description)} */}
+            {t(`doorPages.doors.${selectedDoor.id}`)}
           </p>{" "}
           {/* Translated description */}
           <img
