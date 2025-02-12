@@ -9,7 +9,7 @@ import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai"; // Import icons
 import { useTranslation } from "react-i18next"; // Import useTranslation hook
 
 // Sample logo component
-const Logo = () => <div className="text-2xl font-bold ">Admin Panel</div>;
+const Logo = () => <div className="text-2xl font-bold ">Admin Panell</div>;
 
 const AdminLogin = () => {
   const { t } = useTranslation(); // Initialize translation hook
