@@ -12,7 +12,8 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://door2life-backend.vercel.app",
+        // target: "https://door2life-backend.vercel.app",
+        target: "http://localhost:8000",
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path,
