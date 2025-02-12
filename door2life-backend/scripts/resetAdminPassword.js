@@ -69,5 +69,5 @@ async function resetUserPassword() {
         await mongoose.disconnect();
     }
 }
-// updatePasswords();
-resetUserPassword();
+updatePasswords();
+//resetUserPassword();
