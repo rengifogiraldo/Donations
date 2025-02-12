@@ -1,53 +1,53 @@
 services:
-  # frontend:
-  #   build: 
-  #     context: ./door2life-Frontend
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "8173:80"
-  #   environment:
-  #     - VITE_BACKEND_HOST=http://backend:8000
-  #     - NODE_ENV=production
-  #   depends_on:
-  #     - backend
-  #   restart: unless-stopped
-  #   healthcheck:
-  #     test: ["CMD", "curl", "-f", "http://localhost:80/health"]
-  #     interval: 300s
-  #     timeout: 10s
-  #     retries: 3
-
-  # backend:
-  #   build: 
-  #     context: ./door2life-backend
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "8000:8000"
-  #   environment:
-  #     #- MONGODB_URI=mongodb+srv://door2life:door2life@door2life.obnno.mongodb.net/test
-  #     - MONGODB_URI=mongodb://mongodb:27017/test
-  #     - PORT=8000
-  #     - JWT_TOKEN=your_jwt_secret_here  # Add JWT token for auth
-  #     - NODE_ENV=production
-  #   restart: unless-stopped
-  #   healthcheck:
-  #     test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
-  #     interval: 300s
-  #     timeout: 10s
-  #     retries: 3
-
-  mongodb:
-    image: mongo:latest
+  frontend:
+    build: 
+      context: ./door2life-Frontend
+      dockerfile: Dockerfile
     ports:
-      - "27017:27017"
+      - "8173:80"
     environment:
-      - MONGO_INITDB_DATABASE=test
-    volumes:
-      - mongodb_prod_data:/data/db
+      - VITE_BACKEND_HOST=http://backend:8000
+      - NODE_ENV=production
+    depends_on:
+      - backend
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 300s
+      timeout: 10s
+      retries: 3
 
-volumes:
-  mongodb_prod_data:
-    name: door2life_prod_mongodb  # Named volume for production dat
+  backend:
+    build: 
+      context: ./door2life-backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - mongodb+srv://door2life:door2life@cluster0.htvet.mongodb.net/
+      #- MONGODB_URI=mongodb://mongodb:27017/test
+      - PORT=8000
+      - JWT_TOKEN=6hf676r676r7  # Add JWT token for auth
+      - NODE_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 300s
+      timeout: 10s
+      retries: 3
+
+#   mongodb:
+#     image: mongo:latest
+#     ports:
+#       - "27017:27017"
+#     environment:
+#       - MONGO_INITDB_DATABASE=test
+#     volumes:
+#       - mongodb_prod_data:/data/db
+
+# volumes:
+#   mongodb_prod_data:
+#     name: door2life_prod_mongodb  # Named volume for production dat
 networks:
   default:
     name: door2life_network
