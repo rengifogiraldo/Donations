@@ -174,7 +174,6 @@
       }
     ]
   },
-
   "contact": {
     "title": "We’re here to help you",
     "mail": "Mail",
@@ -229,7 +228,7 @@
     "informationOnDonations": "Information On Donations",
     "infoDoors": "Info Doors",
     "doors": {
-      "1": "Door № 1 the gift will be $50, and you will receive $400 from your  team of 8 people who are at the bottom of the 15 people, who will  also send you $50 each for a total of $400. Reserve $200 for door   № 2. Take $100. And $100 will be sent to the foundation. How to take any business from good   to extraordinary. On this 14 Doors  foundation, we shape the present of   all young people today, so that they  live an extraordinary life.",
+      "1": "Door № 1 the gift will be $500, and you will receive $400 from your  team of 8 people who are at the bottom of the 15 people, who will  also send you $50 each for a total of $400. Reserve $200 for door   № 2. Take $100. And $100 will be sent to the foundation. How to take any business from good   to extraordinary. On this 14 Doors  foundation, we shape the present of   all young people today, so that they  live an extraordinary life.",
       "2": "Door № 2 You will send $200 and receive $1,600 always from the 8   that are on your team; reserve $600 for Door № 3. Take $500 for  yourself. The rest will be sent to the foundation. Dear young people:  Welcome to the manual for your  successful start.   Ask yourself three questions:  1) Does it work? 2) Is it easy?   3) Can I do it?   (The key is to invite people to listen)",
       "3": "Door № 3 you will send $600 and receive $4,800 from your team of 8  people who responded to you; reserve $1,800 for Door № 4.  Take $1,500 for yourself. The rest will be sent to the foundation. 1) What we do NOT require:   2) No gift giving limits  3) No monthly dues   4) No mandatory schedules   5) No annual renewals   6) No employees or bosses  7) Be generous with your gifts",
       "4": "Door № 4 you will send $1,800 and you will receive $14,400.  Reserve $3,000 for door № 5. Take $6,500 for yourself.  The rest will be sent to the foundation. Act today and earn up to $100,000 for each membership.",
@@ -245,7 +244,6 @@
       "14": "Door № 14 and you will receive $96,000.00 upon completion of  Door № 14. We will restart at Door 1 as we did in the beginning.  Door № 14. Take $21,400 for yourself the rest send to the foundation"
     }
   },
-
   "videoTitle": "How to register?",
   "videoDescription": "You enter by direct invitation from a donor of the foundation, the initial donation is $312.",
   "videoContent": "You need an email address, phone number, a username, and password for your account.",
@@ -254,7 +252,6 @@
   "workGroupDescription": "This option can be used to create your Group (8 members) for the '14 DOORS'.",
   "workGroupContent": "And to view all the members that belong to your Work Group.",
   "viewWorkGroupButton": "VIEW WORK GROUP",
-
   "loading": "Loading...",
   "viewGiftsTitle": "VIEW MY GIFTS",
   "viewGiftsDescription": "You should complete each one of the Doors in order from 1 to 14.",
@@ -283,7 +280,6 @@
   "certificateFooter2": "activity)",
   "certificateFooter3": "We agree that a copy or fax is considered legal and valid just like an",
   "certificateFooter4": "original.",
-
   "informationOnDonationsTitle": "INFORMATION ON DONATIONS",
   "learnMore": "Learn More",
   "Donator 'Your' Time Has come": "Donator 'Your' Time Has come",
@@ -296,7 +292,6 @@
   "Children Qualified for a Scholarship": "Children Qualified for a Scholarship",
   "YOUR REWARD FOR BEING A DONOR": "YOUR REWARD FOR BEING A DONOR",
   "Donation of $10,000": "Donation of $10,000",
-
   "Donator 'Your' Time Has come description": "Phone: (863) 623-4220 Donate Today",
   "Donate today for the home description": "Donate today for the Caramicuas home. Phone: (863) 623-4220",
   "Pay for your Funeral description": "We pay for your funeral by being a Foundation donor.",
@@ -307,7 +302,6 @@
   "Children Qualified for a Scholarship description": "Children who are enrolled by their parents qualify for a $50,000 scholarship with a minimum GPA of 2.5.",
   "YOUR REWARD FOR BEING A DONOR description": "By completing door № 14 ask us to make your new home. Donated by the foundation and without electricity bills.",
   "Donation of $10,000 description": "Donation of $10,000 for 15th birthday parties, weddings and more.",
-
   "Opening Doors to Life": "Opening Doors to Life",
   "DOOR-1": "DOOR-1",
   "DOOR-2": "DOOR-2",
@@ -323,7 +317,6 @@
   "DOOR-12": "DOOR-12",
   "DOOR-13": "DOOR-13",
   "DOOR-14": "DOOR-14",
-
   "DOOR-1 description": "Door № 1 the gift will be $50, and you will receive $400 from your team of 8 people who are at the bottom of the 15 people, who will also send you $50 each for a total of $400. Reserve $200 for door № 2. Take $100. And $100 will be sent to the foundation.",
   "DOOR-2 description": "At door № 2 the donation will be $900. Now 8 people will send us a donation of $900 each making a total of $7,200. Let's not forget to set aside $1,200 for the next donation FOR DOOR № 3 and to you we will donate $5,000.",
   "DOOR-3 description": "Door № 3 the table indicates that we should donate $1,200 and you will receive $9,600 from 8 people who will donate $1,200 each. We will set aside $4,600 for the next donation FOR DOOR № 4. And to you we will donate $7,000.",
@@ -353,9 +346,7 @@
   "Waiting For Approval": "Waiting for Approval",
   "Paid": "Paid",
   "Door": "Door",
-
   "Manage Your Gifts and Payments": "Manage Your Gifts and Payments",
-
   "From": "From",
   "Email": "Email",
   "Phone#": "Phone#",
@@ -380,7 +371,6 @@
   "Login successful! 🎉": "Login successful! 🎉",
   "Login failed. Please check your credentials.": "Login failed. Please check your credentials.",
   "An error occurred": "An error occurred",
-
   "Admin Panel": "Admin Panel",
   "Logout": "Logout",
   "footerText": "All rights reserved",
@@ -398,7 +388,6 @@
   "secondGen": "2nd Gen",
   "thirdGen": "3rd Gen",
   "yourBankBalance": "Your Bank Balance",
-
   "stayOnTop": "Stay on top of your finances with real-time updates.",
   "viewTransactions": "View Transactions",
   "recentTransactions": "Recent Transactions",

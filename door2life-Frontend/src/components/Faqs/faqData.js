@@ -148,6 +148,7 @@ const faqs = [
     answer:
       "You can be a Donor as many times as you want. Ask us how to do it.",
   },
+
 ];
 
 export default faqs;
