@@ -94,24 +94,50 @@ const register = async (req, res) => {
 //!Login -Router
 
 const login = async (req, res) => {
+  console.log("========== INTENTO DE LOGIN ==========");
+  console.log("Datos recibidos:", req.body);
   const { email, password } = req.body;
+  
+  if (!email || !password) {
+    console.log("Email o contraseña faltantes");
+    return res.status(400).json({ error: "Email and password are required" });
+  }
+  
   try {
+    console.log("Buscando usuario con email:", email);
     const user = await User.findOne({ email });
+    
     if (!user) {
+      console.log("Usuario no encontrado");
       return res.status(404).json({ error: "User not found" });
     }
-
-    // Compare provided password with hashed password in the database
-    console.log("password: " + password);
-    console.log("Hashpassword: " + user.password);
-
-    const isMatch = await bcrypt.compare(password, user.password);
-    console.log(isMatch);
-    if (!isMatch) {
-      return res.status(400).json({ error: "Incorrect password" });
+    
+    console.log("Usuario encontrado:", user.email);
+    console.log("Contraseña proporcionada:", password);
+    console.log("Contraseña almacenada (hash):", user.password);
+    
+    // Intenta hacer login sin bcrypt primero
+    if (password === user.password) {
+      console.log("Login exitoso (coincidencia directa)");
+      return res.status(200).json({ message: "Login successful", user });
     }
-
-    res.status(200).json({ message: "Login successful", user });
+    
+    // Si no coincide directamente, intenta con bcrypt
+    try {
+      const isMatch = await bcrypt.compare(password, user.password);
+      console.log("¿Coinciden las contraseñas con bcrypt?", isMatch);
+      
+      if (!isMatch) {
+        console.log("Contraseña incorrecta");
+        return res.status(400).json({ error: "Incorrect password" });
+      }
+      
+      console.log("Login exitoso (coincidencia con bcrypt)");
+      res.status(200).json({ message: "Login successful", user });
+    } catch (bcryptError) {
+      console.error("Error en bcrypt:", bcryptError);
+      return res.status(500).json({ error: "Error verifying password" });
+    }
   } catch (error) {
     console.error("Login error:", error);
     res.status(500).json({ error: "Internal server error" });
