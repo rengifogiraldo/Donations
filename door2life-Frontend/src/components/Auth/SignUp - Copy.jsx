@@ -20,7 +20,6 @@ const SignUp = () => {
   const [error, setError] = useState("");
   const [paymentStatus, setPaymentStatus] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const [paymentMethod, setPaymentMethod] = useState("paypal"); // "paypal" or "manual"
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -28,7 +27,6 @@ const SignUp = () => {
 
   useEffect(() => {
     if (
-      paymentMethod === "paypal" &&
       !paymentStatus &&
       paypalRef.current &&
       !paypalRef.current.hasChildNodes()
@@ -76,7 +74,7 @@ const SignUp = () => {
         })
         .render(paypalRef.current);
     }
-  }, [paymentStatus, paymentMethod]);
+  }, [paymentStatus]);
 
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
@@ -93,25 +91,14 @@ const SignUp = () => {
   }, [name, email, password, phone, t]);
 
   const handleRegister = async () => {
-    // Para pago manual, establecemos un valor fijo de 50
-    const amount = paymentMethod === "manual" ? 50 : paypalAmount;
-    
     const registerData = {
       username: name,
       password: password,
       email: email,
       phone: phone,
-      amount: amount,
+      amount: paypalAmount,
       referralCode: referralCode || null,
-      paymentMethod: paymentMethod,
-      paymentStatus: paymentMethod === "paypal" ? "completed" : "pending"
     };
-
-    // Validación de pago para método PayPal
-    if (paymentMethod === "paypal" && !paymentStatus) {
-      setError(t("signUp.paymentRequired"));
-      return;
-    }
 
     await toast
       .promise(
@@ -120,9 +107,7 @@ const SignUp = () => {
           registerData,
         ),
         {
-          success: paymentMethod === "manual" 
-            ? t("signUp.accountCreatedPending") 
-            : t("signUp.accountCreated"),
+          success: t("signUp.accountCreated"),
           error: {
             render({ data }) {
               return (
@@ -256,101 +241,27 @@ const SignUp = () => {
               )}
             </div>
 
-            {/* Payment Method Selection */}
+            {/* PayPal Input */}
             <div>
-              <label className="block mb-1 font-medium text-gray-700">
-                Payment Method
+              <label
+                htmlFor="paypal"
+                className="block mb-1 font-medium text-gray-700"
+              >
+                {t("signUp.paypal")}
               </label>
-              <div className="flex space-x-4 mb-2">
-                <div className="flex items-center">
-                  <input
-                    type="radio"
-                    id="paypal"
-                    name="paymentMethod"
-                    value="paypal"
-                    checked={paymentMethod === "paypal"}
-                    onChange={() => setPaymentMethod("paypal")}
-                    className="mr-2"
-                  />
-                  <label htmlFor="paypal">PayPal ($50)</label>
-                </div>
-                <div className="flex items-center">
-                  <input
-                    type="radio"
-                    id="manual"
-                    name="paymentMethod"
-                    value="manual"
-                    checked={paymentMethod === "manual"}
-                    onChange={() => setPaymentMethod("manual")}
-                    className="mr-2"
-                  />
-                  <label htmlFor="manual">Manual Payment ($50)</label>
-                </div>
-              </div>
-            </div>
-
-            {/* PayPal Input or Manual Payment Instructions */}
-            <div>
-              {paymentMethod === "paypal" ? (
-                <>
-                  <label
-                    htmlFor="paypal"
-                    className="block mb-1 font-medium text-gray-700"
-                  >
-                    {t("signUp.paypal")}
-                  </label>
-                  {paymentStatus ? (
-                    <p className="text-[#195D49] ">
-                      {t("signUp.paymentCompleted")}
-                    </p>
-                  ) : (
-                    <>
-                      <div ref={paypalRef}></div>
-                      {!paymentStatus ? (
-                        <p className="text-red-600 ">
-                          {t("signUp.paymentRequired")}
-                        </p>
-                      ) : null}
-                    </>
-                  )}
-                </>
+              {paymentStatus ? (
+                <p className="text-[#195D49] ">
+                  {t("signUp.paymentCompleted")}
+                </p>
               ) : (
-                <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
-  <h3 className="font-medium text-blue-700 mb-2">{t("Manual Payment Instructions")}</h3>
-  <p className="text-sm mb-2">
-    {t("Please send $50 to one of the following payment methods:")}
-  </p>
-  <ul className="list-disc pl-5 text-sm">
-    <li className="mb-1">
-      <span className="font-medium">Zelle</span>
-    </li>
-    <li className="mb-1">
-      <span className="font-medium">Bank Transfer</span>
-    </li>
-  </ul>
-  <p className="text-sm mt-2 text-blue-700">
-    {t("Important: Your account will be pending until we verify your payment.")}
-  </p>
-  
-  {/* Spanish version */}
-  <hr className="my-3 border-blue-200" />
-  
-  <h3 className="font-medium text-blue-700 mb-2">Instrucciones de Pago Manual</h3>
-  <p className="text-sm mb-2">
-    Envíe $50 a través de uno de los siguientes métodos de pago:
-  </p>
-  <ul className="list-disc pl-5 text-sm">
-    <li className="mb-1">
-      <span className="font-medium">Zelle</span>
-    </li>
-    <li className="mb-1">
-      <span className="font-medium">Transferencia Bancaria</span>
-    </li>
-  </ul>
-  <p className="text-sm mt-2 text-blue-700">
-    Importante: Su cuenta estará pendiente hasta que verifiquemos su pago.
-  </p>
-</div>
+                <>
+                  <div ref={paypalRef}></div>
+                  {!paymentStatus ? (
+                    <p className="text-red-600 ">
+                      {t("signUp.paymentRequired")}
+                    </p>
+                  ) : null}
+                </>
               )}
             </div>
 

@@ -10,17 +10,6 @@ const userSchema = new mongoose.Schema({
   referralCode: { type: String, unique: true, required: true },
   referredBy: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
   amount: { type: Number, default: 0 },
-  // Nuevos campos para método de pago
-  paymentMethod: { 
-    type: String, 
-    enum: ["paypal", "manual"], 
-    default: "paypal" 
-  },
-  paymentStatus: { 
-    type: String, 
-    enum: ["pending", "completed", "rejected"], 
-    default: "completed" 
-  },
   doorStatus: {
     1: { type: Boolean, default: true },
     2: { type: Boolean, default: false },
@@ -60,11 +49,6 @@ const userSchema = new mongoose.Schema({
 userSchema.pre("save", async function (next) {
   const user = this;
 
-  // Saltar el middleware si se indica explícitamente
-  if (user.$skipMiddleware) {
-    return next();
-  }
-
   // Skip if the password is not modified
   if (!user.isModified("password")) {
     return next();
@@ -79,6 +63,7 @@ userSchema.pre("save", async function (next) {
     next(error); // Handle any errors
   }
 });
+
 userSchema.methods.generateToken = async function () {
   try {
     return jwt.sign(
@@ -98,4 +83,5 @@ userSchema.methods.generateToken = async function () {
 };
 
 const User = new mongoose.model("User", userSchema);
+
 module.exports = User;

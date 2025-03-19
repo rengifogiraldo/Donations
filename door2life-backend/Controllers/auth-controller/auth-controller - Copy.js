@@ -3,6 +3,7 @@ const bcrypt = require("bcryptjs");
 const MainBank = require("../../models/bank-Model");
 
 //!Home -Router
+
 const home = async (req, res) => {
   try {
     res.status(200).send("hello from the server using control");
@@ -12,25 +13,18 @@ const home = async (req, res) => {
 };
 
 //!Register -Router
+
 const register = async (req, res) => {
   try {
-    const { 
-      username, 
-      password, 
-      email, 
-      phone, 
-      referralCode, 
-      amount, 
-      paymentMethod, 
-      paymentStatus 
-    } = req.body;
+    const { username, password, email, phone, referralCode, amount } = req.body;
 
     if (
       !username ||
       !password ||
       !email ||
       !phone ||
-      !referralCode
+      !referralCode ||
+      !amount
     ) {
       return res.status(400).json({ Error: "Please Provide All Data" });
     }
@@ -44,22 +38,14 @@ const register = async (req, res) => {
     // Generate a unique referral code (e.g., a short random string)
     const generatedReferralCode = Math.random().toString(36).substring(2, 8);
 
-    // Hash the password explicitly here
-    const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash(password, salt);
-    console.log(`Contraseña original: ${password}`);
-    console.log(`Contraseña hasheada: ${hashedPassword}`);
-
-    // Create a new user with the hashed password
+    // Create a new user
     const newUser = new User({
       username,
-      password: hashedPassword, // Usar la contraseña hasheada explícitamente
+      password,
       email,
       phone,
-      amount: amount || 50, // Default to $50 if not provided
+      amount, // Save the initial donation amount
       referralCode: generatedReferralCode,
-      paymentMethod: paymentMethod || 'paypal', // Default to PayPal
-      paymentStatus: paymentStatus || 'completed' // Default to completed for PayPal
     });
 
     // If a referral code was provided, link the accounts
@@ -81,32 +67,20 @@ const register = async (req, res) => {
       }
     }
 
-    // Desactivar el middleware pre-save para evitar un doble hashing
-    newUser.$skipMiddleware = true;
-
     // Save the new user
     await newUser.save();
-
-    // Verificar que la contraseña se haya guardado correctamente
-    const savedUser = await User.findOne({ email });
-    const passwordMatch = await bcrypt.compare(password, savedUser.password);
-    console.log(`Verificación de contraseña después de guardar: ${passwordMatch}`);
 
     // Save the donation to the Main Bank
     const mainBankEntry = new MainBank({
       name: username,
       email: email,
-      amount: amount || 50,
-      paymentMethod: paymentMethod || 'paypal',
-      paymentStatus: paymentStatus || 'completed'
+      amount: amount,
     });
 
     await mainBankEntry.save();
 
     res.status(201).json({
-      successMessage: paymentMethod === 'manual' 
-        ? "Account created successfully. Your account will be activated once payment is verified." 
-        : "Successfully registered and created account",
+      successMessage: "Successfully registered and created account",
       userId: newUser._id,
       referralCode: generatedReferralCode,
       amount: newUser.amount,
@@ -118,6 +92,7 @@ const register = async (req, res) => {
 };
 
 //!Login -Router
+
 const login = async (req, res) => {
   console.log("========== INTENTO DE LOGIN ==========");
   console.log("Datos recibidos:", req.body);
