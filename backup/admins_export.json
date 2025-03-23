@@ -1,0 +1,34 @@
+[
+  {
+    "_id": "67db0de50e4c7dd9e6574738",
+    "username": "Admin",
+    "email": "admin@openingdoors2life.org",
+    "password": "$2a$10$HGFBUtyYCNnvfRCyK3S/yecYpJxkb.qA64/22YzTMGQtVdEIax5gy",
+    "role": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "67db24cec601cd2c0041c24e",
+    "email": "juanreyes2@gmail.com",
+    "__v": 0,
+    "password": "$2a$10$FQOOPZw59a89vWJam7HVGOJQ9ltSIsM64KeQJ0Mg16W/oO/xmsOtm",
+    "role": "admin",
+    "username": "Juan Reyes"
+  },
+  {
+    "_id": "67db24cec601cd2c0041c24f",
+    "email": "marcorengifo28@gmail.com",
+    "__v": 0,
+    "password": "$2a$10$QTkSlrjuvoQHaGf8/jeso.YLgGq0D4CasvJtSTgDhMNzZeTnHPMaG",
+    "role": "admin",
+    "username": "Marco Rengifo"
+  },
+  {
+    "_id": "67db24cec601cd2c0041c250",
+    "email": "info@hacemossuweb.com",
+    "__v": 0,
+    "password": "$2a$10$iMTZ2np2CWsCP.yhHcddr.l1pfSzvRjAR7FtMOhBQnJPl5Xpxy63O",
+    "role": "admin",
+    "username": "Info"
+  }
+]
