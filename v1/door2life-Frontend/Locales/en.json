@@ -1,0 +1,408 @@
+{
+  "navbar": {
+    "home": "Home",
+    "beliefs": "Beliefs",
+    "contact": "Contact",
+    "faqs": "FAQs",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "myAccount": "My Account",
+    "adminPanel": "Admin Panel"
+  },
+  "footer": {
+    "product": "Product",
+    "helpCenter": "Help Center",
+    "blog": "Blog",
+    "status": "Status",
+    "releaseNotes": "Release Notes",
+    "featureRequest": "Feature Request",
+    "forEnglish": "For English",
+    "address": "3693 NW 8th Ave, Okeechobee, FL 34972",
+    "mainOffice": "(863) 623-4220 (Main Office)",
+    "contactEmail": "contact@openingdoorstolife.org",
+    "links": "Links",
+    "policies": "Policies",
+    "para": "PARA",
+    "copyright": "Copyright © 2025 Opening Doors To Life",
+    "aboutUs": "About Us",
+    "aboutUsdesc": "We are a group with the sole purpose of helping each other, our loved ones, and all those people with economic limitations who want to join this family of exclusive members and participate in a wonderful opportunity that allows us door to door find financial relief.",
+    "hayf": "H.Y.A.F",
+    "hayfdesc": "Juan Reyes and Monica Reyes are the Co-Founders of Hispanic American Youth Foundation. We have a lot of exciting news to come about this wonderful foundation helping our Hispanic American Youths of today!",
+    "office": "Office",
+    "mainOfficePhone": "(863) 623-4220 (Main Office)",
+    "speakWithMonica": "Speak with MONICA REYES",
+    "speakWithJuan": "Speak with JUAN REYES",
+    "phone": "(863) 623-6162"
+  },
+  "beliefs": {
+    "title": "Our Beliefs",
+    "joinUs": "Join us to create the World of Yours and Mine.",
+    "list": [
+      "We are a group of individuals with the unique goal of contributing towards one another mutually, with our loved ones and those individuals who suffer from financial limitations and that are willing to join our family of exclusive members in order to be part of this wonderful opportunity that will let us open doors to find financial freedom.",
+      "We believe that by freely giving something of our own and of our property, we open a flow of abundance into our lives.",
+      "We believe that there is abundance on Earth, that of anything there is more than enough to satisfy everyone, that no one ever has to pass need.",
+      "We believe that our intention influences our reward; That if our intention is to give, we will receive, but if our intention is only to receive and give for such purpose we will feel need.",
+      "We believe that the power of humanity can influence our own destiny and that there are forces that try to prevent us from knowing how.",
+      "We believe in a power greater than ourselves. Let it be that power, as it is called and as it manifests itself is a personal belief and will never be a membership requirement demanded by this belief system.",
+      "We believe in the separation between Church and State, that our beliefs can not be imposed on us by the government and that no particular faith, religion or belief system should control or influence what is established by law.",
+      "We believe that any faith, religion, or belief system has the wisdom to contribute to the good of all and should be encouraged to do so.",
+      "We believe in respect and reverence for all beliefs, that each of us should try to bring out the good from others’ beliefs and adopt it for ourselves.",
+      "We believe that doctrinal differences between beliefs should not affect our love of one another nor our respect for one’s beliefs.",
+      "We believe that by sharing these beliefs, we can change the world to a better one and create a world that works for You and Me.",
+      "We extend our invitation to people who wish to share our way of thinking without discrimination of race, sex, belief, educational experience, nationality, financial situation or geographic location to come and participate with us in systematically giving, receiving and inviting in our Beliefs."
+    ]
+  },
+  "faqs": {
+    "title": "FAQ's",
+    "list": [
+      {
+        "question": "How do I join the GROUP?",
+        "answer": "To enter the Foundation you must be directly invited by an active member of the Foundation."
+      },
+      {
+        "question": "How do I know that I am already registered as a member of the FUNCTION?",
+        "answer": "Once whoever invites you registers you in the system, you will receive an email with your ID and PASSWORD (password) and this link 'www.openingdoorstolife.org' from where you can enter your virtual office."
+      },
+      {
+        "question": "How much do you have to donate to be part of the FOUNDATION community?",
+        "answer": "After registering you must make a donation of $300 which you must send to a member of the community that the system assigns to you. And with the donations that you receive, you will participate in the following DOORS."
+      },
+      {
+        "question": "Is there any additional cost?",
+        "answer": "A monthly donation must be made definitely NOT, but invitations will be made to all Donors to attend the events where we will make Donations for different needs in our communities."
+      },
+      {
+        "question": "When should I make my donations as soon as I become a member of the FOUNDATION?",
+        "answer": "You imply that you are ready, and you agree to make your donations to the member that the system assigns to you."
+      },
+      {
+        "question": "When should I send my first Donation of $300 dollars?",
+        "answer": "Once you activate the FOUNDATION you will send your first donation. And you will receive a message in your email where you will know the details of the person to whom you should make your donations. The member who will receive your donation will also be notified by mail."
+      },
+      {
+        "question": "Who should I send my donations to?",
+        "answer": "Only to the person that the system tells you; remember that this person will be the one you donate to all the time."
+      },
+      {
+        "question": "Can I activate all the DOORS at the same time?",
+        "answer": "Definitely NOT, but once you start receiving your first donations you can activate all your relatives in Mexico or any country in the world where they are."
+      },
+      {
+        "question": "When will I start receiving donations?",
+        "answer": "You will start receiving donations after your registration."
+      },
+      {
+        "question": "How do I know who I should make my initial donations to?",
+        "answer": "Once you join the group, the system will send you an email with the details of the person to whom you should make your donations, as well as detailed information in your active member area."
+      },
+      {
+        "question": "By what means should I make and receive my donations?",
+        "answer": "Once you know the details of the person to whom you should make your donations and from whom you should receive your donations, you should contact him just to thank him for being in this wonderful Foundation."
+      },
+      {
+        "question": "Should the money or donations be sent to the GROUP Administrators?",
+        "answer": "Definitely not."
+      },
+      {
+        "question": "To how many people should donations be made?",
+        "answer": "Only one donation is made at each DOOR; in return, 8 donations of the same value are received at each DOOR from your 8-person donors all the time."
+      },
+      {
+        "question": "What happens if I don't receive the donation?",
+        "answer": "If you do not receive your donation, enter your back office or member area of 'www.openingdoorstolife.org' and inform the administrators immediately. They will resolve the issue."
+      },
+      {
+        "question": "What happens if a person does not make a donation?",
+        "answer": "If a person does not make a donation, they will be permanently terminated."
+      },
+      {
+        "question": "If any donor fails to send me my scheduled donation, will I receive fewer donations?",
+        "answer": "Definitely No. The Foundation will stop the donation since all members must receive all the donations established by the Foundation."
+      },
+      {
+        "question": "What should I do after sending my donation as agreed with the respective member?",
+        "answer": "You only have to dedicate an hour to your Virtual Page to see how many donations you will receive and contact administrators only if needed."
+      },
+      {
+        "question": "What should I do after receiving the donations?",
+        "answer": "After receiving your donations you must invite friends, family, or others to participate and enjoy a barbecue and to register for this opportunity."
+      },
+      {
+        "question": "What else should I do when I receive the donation or money?",
+        "answer": "When you receive your donation, keep the receipt or proof in case there is any issue."
+      },
+      {
+        "question": "How many Members can I join the Foundation?",
+        "answer": "You can enter as many people as you wish. The more people you enter, the faster you will receive your donations."
+      },
+      {
+        "question": "Is there a deadline to start receiving donations at each door?",
+        "answer": "There is no time limit; you decide if you are active or passive."
+      },
+      {
+        "question": "When should I activate the doors?",
+        "answer": "The doors are automatically activated once you become a member; to receive donations at a door, you must be active."
+      },
+      {
+        "question": "Can I join the GROUP for free?",
+        "answer": "Definitely NO; only work 3 days to earn your registration."
+      },
+      {
+        "question": "Can I receive donations without having paid my initial donation?",
+        "answer": "Definitely NO."
+      },
+      {
+        "question": "In what currency should donations be made?",
+        "answer": "In American Dollars (USD). If made between members of another country, it can be in local currency as agreed by both parties."
+      },
+      {
+        "question": "How do I manage my donor area and participate without any problem?",
+        "answer": "Once you give your information to register, you will receive all the information in your language to participate without inconvenience."
+      },
+      {
+        "question": "People from which countries can participate in 'www.openingdoorstolife.org'?",
+        "answer": "People from all countries around the world can participate."
+      },
+      {
+        "question": "Do I have to pay tax in my country for donations received at the Foundation?",
+        "answer": "In the United States, no taxes are paid for receiving donations. Check with your country if you need to pay for received donations."
+      },
+      {
+        "question": "Can I be a Donor more than once?",
+        "answer": "You can be a Donor as many times as you want. Ask us how to do it."
+      }
+    ]
+  },
+  "contact": {
+    "title": "We’re here to help you",
+    "mail": "Mail",
+    "mailValue": "contact@openingdoorstolife.org",
+    "mailValue2": "info@openingdoorstolife.org",
+    "address": "Address",
+    "addressValue": "3693 NW 8th Ave, Okeechobee, FL 34972",
+    "phone": "Phone",
+    "phoneValue": "(863) 623-4220 (Office)",
+    "service": "Service",
+    "serviceValue": "24/7 Service",
+    "form": {
+      "namePlaceholder": "Enter your Name",
+      "phonePlaceholder": "Phone Number",
+      "emailPlaceholder": "Enter your Email",
+      "commentsPlaceholder": "Your Comments and Questions",
+      "submitButton": "Submit"
+    }
+  },
+  "email": "Email",
+  "password": "Password",
+  "enterEmail": "Enter your email",
+  "enterPassword": "Enter your password",
+  "loginButton": "Login",
+  "loginInProgress": "Logging in...",
+  "loginSuccess": "Login Successful! 🎉",
+  "loginError": "Failed to login. Check Email or Password",
+  "errorMessage": "Please enter your Email address or Password",
+  "signUp": {
+    "title": "Sign Up",
+    "ref": "Please Provide a valid Referral Code Before Payment",
+    "username": "Username",
+    "phone": "Phone",
+    "email": "Email",
+    "password": "Password",
+    "paypal": "PayPal",
+    "referralCode": "Referral Code",
+    "register": "Register",
+    "paymentRequired": "Payment Required!",
+    "paymentCompleted": "Payment Completed!",
+    "provideAllData": "Please Provide All Data",
+    "emailAlreadyExist": "Email Already Exists",
+    "accountCreated": "Successfully created an account!"
+  },
+  "doorPages": {
+    "welcomeVideo": "Welcome Video",
+    "register": "Register",
+    "workGroup": "Work Group",
+    "receiveGifts": "Receive Gifts",
+    "sendGifts": "Send Gifts",
+    "printCertificate": "Print Certificate",
+    "informationOnDonations": "Information On Donations",
+    "infoDoors": "Info Doors",
+    "doors": {
+      "1": "Door № 1 the gift will be $50, and you will receive $400 from your  team of 8 people who are at the bottom of the 15 people, who will  also send you $50 each for a total of $400. Reserve $200 for door   № 2. Take $100. And $100 will be sent to the foundation. How to take any business from good   to extraordinary. On this 14 Doors  foundation, we shape the present of   all young people today, so that they  live an extraordinary life.",
+      "2": "Door № 2 You will send $200 and receive $1,600 always from the 8   that are on your team; reserve $600 for Door № 3. Take $500 for  yourself. The rest will be sent to the foundation. Dear young people:  Welcome to the manual for your  successful start.   Ask yourself three questions:  1) Does it work? 2) Is it easy?   3) Can I do it?   (The key is to invite people to listen)",
+      "3": "Door № 3 you will send $600 and receive $4,800 from your team of 8  people who responded to you; reserve $1,800 for Door № 4.  Take $1,500 for yourself. The rest will be sent to the foundation. 1) What we do NOT require:   2) No gift giving limits  3) No monthly dues   4) No mandatory schedules   5) No annual renewals   6) No employees or bosses  7) Be generous with your gifts",
+      "4": "Door № 4 you will send $1,800 and you will receive $14,400.  Reserve $3,000 for door № 5. Take $6,500 for yourself.  The rest will be sent to the foundation. Act today and earn up to $100,000 for each membership.",
+      "5": "Door № 5 you will send $3,000 and receive $24,000, reserve $4,000 for Door № 6. Take $10,000 for yourself. Send the rest to the foundation. Dear young ladies and young men, if you are intelligent,  you can live an extraordinary life here. ",
+      "6": "Door № 6: You will send $4,000 and receive $32,000, reserve  $12,000  to complete Door № 7. Take $10,000 for yourself.   Send the rest to the foundation.",
+      "7": "Door № 7 and you will receive $96,000. Take $21,400 for yourself.  The rest will be sent to the foundation. You have received from  door № 1 to door № 7 $50,000.",
+      "8": "Door № 8 the gift will be $50, and you will receive $400 from your  team of 8 people who are at the bottom of the 15 people, who will   also send you $50 each for a total of $400. Reserve $200 for door  № 2. And $100 for yourself. And $100 will be sent to the foundation. ",
+      "9": "Door № 9: You will send $200 and receive $1,600 always from the 8  that are on your team; reserve $600 for door № 10. At door № 9:  Take $500 for yourself. Send the rest to the foundation.  ",
+      "10": "Door № 10 you will send $600 and receive $4,800 from your team   of 8 people who respond to you; reserve $1,800 for Door № 11. Door № 10 takes $1,500 for yourself and sends the rest to the foundation. ",
+      "11": "Door № 11 you will send $1,800 and you will receive $14,400  reserve $3,000 for door № 12. Door № 11 take $6,500 for yourself   the rest send it to the foundation. ",
+      "12": "Door № 12 you will send $3,000 and receive $24,000, reserve  $4,000 for Door № 13. Door № 12 takes $10,000 for yourself the   rest send it to the foundation. ",
+      "13": "Door № 13. You will send $4,000 and receive $32,000, reserve   $12,000 to complete Door № 14. Door № 13 takes $10,000 for   yourself and sends the rest to the foundation.",
+      "14": "Door № 14 and you will receive $96,000.00 upon completion of  Door № 14. We will restart at Door 1 as we did in the beginning.  Door № 14. Take $21,400 for yourself the rest send to the foundation"
+    }
+  },
+  "videoTitle": "How to register?",
+  "videoDescription": "You enter by direct invitation from a donor of the foundation, the initial donation is $312.",
+  "videoContent": "You need an email address, phone number, a username, and password for your account.",
+  "videoFooter": "The only requirement is to invite 2 or more people to register, and become your guest.",
+  "workGroupTitle": "Work Group:",
+  "workGroupDescription": "This option can be used to create your Group (8 members) for the '14 DOORS'.",
+  "workGroupContent": "And to view all the members that belong to your Work Group.",
+  "viewWorkGroupButton": "VIEW WORK GROUP",
+  "loading": "Loading...",
+  "viewGiftsTitle": "VIEW MY GIFTS",
+  "viewGiftsDescription": "You should complete each one of the Doors in order from 1 to 14.",
+  "currentDoorLabel": "Current Door:",
+  "door": "DOOR",
+  "allDoorsCompleted": "ALL DOORS COMPLETED",
+  "sendGiftsTitle": "SEND GIFTS",
+  "sendGiftsDescription": "This option can be used to send a gift.",
+  "sendGiftsInstructions": "Click on the button to confirm the gift sending.",
+  "sendGiftTo": "SEND GIFT TO",
+  "printCertificateTitle": "Print Certificate",
+  "printCertificateDescription": "Print your \"Opening Doors to Life\" Membership Certificate",
+  "printCertificateInstructions": "Click on the button to print the certificate",
+  "print": "Print",
+  "certificateHeader": "DONATION CERTIFICATE OF:",
+  "certificateUsernamePhone": "{{username}} TEL: {{phone}}",
+  "certificateWebsite": "www.openingdoorstolife.org",
+  "certificateAddress1": "3693 NW 8TH AVE OKEECHOBEE",
+  "certificateAddress2": "FLORIDA 34972",
+  "certificateEmail": "EMAIL: {{email}}",
+  "certificateMainText": "Dear Sir or Madam: Welcome to the Hispanic-American Cultural Foundation,",
+  "certificateSecondLine": "Registered in the United States under license 501(c)(3) to help the",
+  "certificateThirdLine": "Communities, etc. Registration Date: 2021-07-18 Registration Number: 1",
+  "certificateCredentials": "Username: {{username}} User ID: {{userId}}",
+  "certificateFooter1": "(With this activity we do not fail people; people fail this",
+  "certificateFooter2": "activity)",
+  "certificateFooter3": "We agree that a copy or fax is considered legal and valid just like an",
+  "certificateFooter4": "original.",
+  "informationOnDonationsTitle": "INFORMATION ON DONATIONS",
+  "learnMore": "Learn More",
+  "Donator 'Your' Time Has come": "Donator 'Your' Time Has come",
+  "Donate today for the home": "Donate today for the home",
+  "Pay for your Funeral": "Pay for your Funeral",
+  "Register your PETS": "Register your PETS",
+  "Open a door in my life donor": "Open a door in my life donor",
+  "We at Opening Doors to Life welcome you as a DONOR": "We at Opening Doors to Life welcome you as a DONOR",
+  "Birth of your baby": "Birth of your baby",
+  "Children Qualified for a Scholarship": "Children Qualified for a Scholarship",
+  "YOUR REWARD FOR BEING A DONOR": "YOUR REWARD FOR BEING A DONOR",
+  "Donation of $10,000": "Donation of $10,000",
+  "Donator 'Your' Time Has come description": "Phone: (863) 623-4220 Donate Today",
+  "Donate today for the home description": "Donate today for the Caramicuas home. Phone: (863) 623-4220",
+  "Pay for your Funeral description": "We pay for your funeral by being a Foundation donor.",
+  "Register your PETS description": "Now you can register your pets. You just have to put your 2 guests on them. Let it be people",
+  "Open a door in my life donor description": "Donate for the homeless. Phone: (863) 623-4220",
+  "We at Opening Doors to Life welcome you as a DONOR description": "Donate for the homeless. Phone: (863) 623-4220",
+  "Birth of your baby description": "Being afraid of giving birth, or afraid of the pains of childbirth, is absolutely normal. However, the power of positive thinking is amazing and can transform that fear into positive energy to give birth to your baby. Now you will receive a donation of $10,000 for each baby you give birth to.",
+  "Children Qualified for a Scholarship description": "Children who are enrolled by their parents qualify for a $50,000 scholarship with a minimum GPA of 2.5.",
+  "YOUR REWARD FOR BEING A DONOR description": "By completing door № 14 ask us to make your new home. Donated by the foundation and without electricity bills.",
+  "Donation of $10,000 description": "Donation of $10,000 for 15th birthday parties, weddings and more.",
+"Bienvenido a Opening Doors 2 Life": "Welcome to Opening Doors 2 Life",
+  "Opening Doors to Life": "Opening Doors to Life",
+  "DOOR-1": "DOOR-1",
+  "DOOR-2": "DOOR-2",
+  "DOOR-3": "DOOR-3",
+  "DOOR-4": "DOOR-4",
+  "DOOR-5": "DOOR-5",
+  "DOOR-6": "DOOR-6",
+  "DOOR-7": "DOOR-7",
+  "DOOR-8": "DOOR-8",
+  "DOOR-9": "DOOR-9",
+  "DOOR-10": "DOOR-10",
+  "DOOR-11": "DOOR-11",
+  "DOOR-12": "DOOR-12",
+  "DOOR-13": "DOOR-13",
+  "DOOR-14": "DOOR-14",
+  "DOOR-1 description": "Door № 1 the gift will be $50, and you will receive $400 from your team of 8 people who are at the bottom of the 15 people, who will also send you $50 each for a total of $400. Reserve $200 for door № 2. Take $100. And $100 will be sent to the foundation.",
+  "DOOR-2 description": "At door № 2 the donation will be $900. Now 8 people will send us a donation of $900 each making a total of $7,200. Let's not forget to set aside $1,200 for the next donation FOR DOOR № 3 and to you we will donate $5,000.",
+  "DOOR-3 description": "Door № 3 the table indicates that we should donate $1,200 and you will receive $9,600 from 8 people who will donate $1,200 each. We will set aside $4,600 for the next donation FOR DOOR № 4. And to you we will donate $7,000.",
+  "DOOR-4 description": "Door № 4 here we will donate $4,600 and receive $36,800 from the 8 donors who will donate $4,600 each to you; (we will set aside $6,800 for the next donation) FOR DOOR № 5. And to you we will donate $20,000.",
+  "DOOR-5 description": "DOOR № 5 we will donate $6,800 and receive $54,400 from the 8 Donors who are from your team; (set aside $9,400 for the next donation). FOR DOOR № 6. And we will donate $20,000 to you.",
+  "DOOR-6 description": "Door № 6 we will donate $9,400 and receive $75,200 from your team of 8 donors who will each send $9,400 (Set aside $15,200 to finish door № 7). And we will donate $24,000 to you.",
+  "DOOR-7 description": "Door № 7 we will donate $15,200 and we will receive $121,600 each of $15,200 from your team of 8 donors who are matched to donate to you. In the end, we will receive $121,600. And we will donate $24,000 to you.",
+  "DOOR-8 description": "At Door № 8 you will donate $10,000 and 8 donors will donate $10,000 to us for a total of $80,000. To you we will return your donation at Door № 8 of $10,000. We will now donate $900 for the next donation for Door № 9. We will now donate for you at each Door.",
+  "DOOR-9 description": "Door № 9 we will donate $900 now 8 donors will donate $900 each making a total of $7,200. We will set aside $1,200 for the next donation FOR THE DOOR № 10. To you we will donate $5,000.",
+  "DOOR-10 description": "Door № 10 we will donate $1,200 and receive $9,600 from the team of 8 who will donate $1,200 each. We will set aside $4,600 for the next donation FOR THE DOOR № 11. To you we will donate $7,000.",
+  "DOOR-11 description": "Door № 11 we will donate $4,600 and receive $36,800 from 8 donors who will each give you $4,600; (we will set aside $6,800 for the next donation) FOR THE DOOR № 12. We will donate $20,000 to you.",
+  "DOOR-12 description": "DOOR № 12 we will donate $6,800 and receive $54,400 from your team of 8 donors; (set aside $9,400 for the next donation). FOR THE DOOR № 13. We will donate $20,000 to you.",
+  "DOOR-13 description": "Door № 13 we will donate $9,400 and receive $75,200 from your 8 donors who will each donate $9,400 (set aside $15,200 to finish DOOR #14). To you we will donate $24,000.",
+  "DOOR-14 description": "Door № 14 we will donate $15,200 and receive $121,600 each of $15,200 from your team of 8 donors who will donate permanently. AT THE END WE WILL RECEIVE $121,600. You will receive a total of $100,000. From Door 8 to Door 14.",
+  "Referral Tree": "Referral Tree",
+  "Go Back": "Go Back",
+  "Founder": "Founder",
+  "1st Gen": "1st Gen",
+  "2nd Gen": "2nd Gen",
+  "Complete your 3rd Generation & Send donations request By Clicking on it": "Complete your 3rd Generation & Send donations request By Clicking on it",
+  "Gifts To Receive": "Gifts To Receive",
+  "Request": "Request",
+  "Amount": "Amount",
+  "No Request Found": "No Request Found",
+  "No Request Message": "It seems like there are no requests at the moment. Please check back later.",
+  "Pending": "Pending",
+  "Waiting For Approval": "Waiting for Approval",
+  "Paid": "Paid",
+  "Door": "Door",
+  "Manage Your Gifts and Payments": "Manage Your Gifts and Payments",
+  "From": "From",
+  "Email": "Email",
+  "Phone#": "Phone#",
+  "Sending request and waiting for approval...": "Sending request and waiting for approval...",
+  "Sent successfully and waiting for approval!": "Sent successfully and waiting for approval!",
+  "Already waiting for approval or request failed.": "Already waiting for approval or request failed.",
+  "Admin Dashboard": "Admin Dashboard",
+  "Manage your platform efficiently": "Manage your platform efficiently",
+  "Admin Profile": "Admin Profiles",
+  "Manage user accounts": "Manage user accounts",
+  "Referrals Tree": "Referrals Tree",
+  "View and manage referrals": "View and manage referrals",
+  "Main Bank": "Main Bank",
+  "Track finances": "Track finances",
+  "See Single User": "See Single User",
+  "Single User Detail": "Single User Detail",
+  "Enter your email": "Enter your email",
+  "Password": "Password",
+  "Enter your password": "Enter your password",
+  "Login": "Login",
+  "Logging in...": "Logging in...",
+  "Login successful! 🎉": "Login successful! 🎉",
+  "Login failed. Please check your credentials.": "Login failed. Please check your credentials.",
+  "An error occurred": "An error occurred",
+  "Admin Panel": "Admin Panel",
+  "Logout": "Logout",
+  "footerText": "All rights reserved",
+  "goBack": "Go Back",
+  "adminPanel": "Admin Panel",
+  "completeProgress": "Complete Progress",
+  "totalDonations": "Total Donations",
+  "doorStatus": "Door Status",
+  "unlocked": "Unlocked",
+  "locked": "Locked",
+  "referralTree": "Referral Tree",
+  "showFullTree": "Show Full Tree",
+  "founder": "Founder",
+  "firstGen": "1st Gen",
+  "secondGen": "2nd Gen",
+  "thirdGen": "3rd Gen",
+  "yourBankBalance": "Your Bank Balance",
+  "stayOnTop": "Stay on top of your finances with real-time updates.",
+  "viewTransactions": "View Transactions",
+  "recentTransactions": "Recent Transactions",
+  "stayUpdated": "Stay updated with your latest activity",
+  "noTransactions": "No transactions available",
+  "yourAmount": "Your Amount",
+  "sendDonationRequest": "Send Donation Request",
+  "searchUserByEmail": "Enter Email",
+  "emailPlaceholder": "Enter email",
+  "errorFetchingUserData": "Failed to fetch user data. Please check the email or try again later.",
+  "userProfile": "'s Profile",
+  "phone": "Phone",
+  "referralCode": "Referral Code",
+  "donationAmount": "Donation Amount",
+  "open": "Open",
+  "closed": "Closed"
+}

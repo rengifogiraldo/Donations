@@ -1,0 +1,422 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "beliefs": "Creencias",
+    "contact": "Contacto",
+    "faqs": " Frecuentes",
+    "logout": "Cerrar sesión",
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "myAccount": "Mi Cuenta"
+  },
+  "footer": {
+    "product": "Producto",
+    "helpCenter": "Centro de ayuda",
+    "blog": "Blog",
+    "status": "Estado",
+    "releaseNotes": "Notas de lanzamiento",
+    "featureRequest": "Solicitud de características",
+    "forEnglish": "Para Español",
+    "address": "3693 NW 8th Ave, Okeechobee, FL 34972",
+    "mainOffice": "(863) 623-4220 (Oficina principal)",
+    "contactEmail": "contacto@openingdoorstolife.org",
+    "links": "Enlaces",
+    "policies": "Políticas",
+    "para": "PARA",
+    "copyright": "Derechos de autor © 2025 Abriendo puertas a la vida",
+    "aboutUs": "Sobre nosotros",
+    "aboutUsdesc": "Somos un grupo con el único propósito de ayudarnos mutuamente, a nuestros seres queridos y a todas aquellas personas con limitaciones económicas que deseen unirse a esta familia de miembros exclusivos y participar en una maravillosa oportunidad que nos permite encontrar alivio financiero de puerta a puerta.",
+    "hyaf": "H.Y.A.F",
+    "hayfdesc": "Juan Reyes y Monica Reyes son los cofundadores de la Fundación Hispanoamericana de la Juventud. ¡Tenemos muchas noticias emocionantes sobre esta maravillosa fundación que ayuda a nuestra juventud hispanoamericana de hoy!",
+    "office": "Oficina",
+    "mainOfficePhone": "(863) 623-4220 (Oficina principal)",
+    "speakWithMonica": "Hablar con MONICA REYES",
+    "speakWithJuan": "Hablar con JUAN REYES",
+    "phone": "(863) 623-6162"
+  },
+  "beliefs": {
+    "title": "Nuestras Creencias",
+    "joinUs": "Únete a nosotros para crear el Mundo Tuyo y Mío.",
+    "list": [
+      "Somos un grupo de individuos con el objetivo único de contribuir mutuamente unos con otros, con nuestros seres queridos y con aquellas personas que sufren limitaciones financieras y que estén dispuestas a unirse a nuestra familia de miembros exclusivos para ser parte de esta maravillosa oportunidad que nos permitirá abrir puertas para encontrar la libertad financiera.",
+      "Creemos que al dar libremente algo de nosotros mismos y de nuestra propiedad, abrimos un flujo de abundancia en nuestras vidas.",
+      "Creemos que hay abundancia en la Tierra, que de todo hay más que suficiente para satisfacer a todos, que nadie tiene que pasar necesidad.",
+      "Creemos que nuestra intención influye en nuestra recompensa; que si nuestra intención es dar, recibiremos, pero si nuestra intención es solo recibir y dar con ese propósito, sentiremos necesidad.",
+      "Creemos que el poder de la humanidad puede influir en nuestro propio destino y que hay fuerzas que intentan evitar que sepamos cómo.",
+      "Creemos en un poder superior a nosotros mismos. Que ese poder, como se llame y como se manifieste, es una creencia personal y nunca será un requisito de membresía exigido por este sistema de creencias.",
+      "Creemos en la separación entre Iglesia y Estado, que nuestras creencias no pueden ser impuestas por el gobierno y que ninguna fe, religión o sistema de creencias en particular debería controlar o influir en lo establecido por la ley.",
+      "Creemos que cualquier fe, religión o sistema de creencias tiene la sabiduría para contribuir al bien de todos y debe ser alentada a hacerlo.",
+      "Creemos en el respeto y la reverencia por todas las creencias, que cada uno de nosotros debería intentar sacar lo mejor de las creencias de los demás y adoptarlo para nosotros mismos.",
+      "Creemos que las diferencias doctrinales entre creencias no deberían afectar nuestro amor mutuo ni nuestro respeto por las creencias de los demás.",
+      "Creemos que al compartir estas creencias, podemos cambiar el mundo a uno mejor y crear un mundo que funcione para Ti y para Mí.",
+      "Extendemos nuestra invitación a las personas que deseen compartir nuestra forma de pensar sin discriminación de raza, sexo, creencia, experiencia educativa, nacionalidad, situación financiera o ubicación geográfica para que vengan y participen con nosotros en dar, recibir e invitar sistemáticamente en nuestras creencias."
+    ]
+  },
+  "faqs": {
+    "title": "Preguntas Frecuentes",
+    "list": [
+      {
+        "question": "¿Cómo puedo unirme al GRUPO?",
+        "answer": "Para ingresar a la Fundación debes ser invitado directamente por un miembro activo de la Fundación."
+      },
+      {
+        "question": "¿Cómo sé que ya estoy registrado como miembro de la FUNCIÓN?",
+        "answer": "Una vez que quien te invita te registre en el sistema, recibirás un correo electrónico con tu ID y CONTRASEÑA y este enlace 'www.openingdoorstolife.org' desde donde podrás ingresar a tu oficina virtual."
+      },
+      {
+        "question": "¿Cuánto se debe donar para ser parte de la comunidad de la FUNDACIÓN?",
+        "answer": "Después de registrarte, debes hacer una donación de $300, la cual debes enviar a un miembro de la comunidad que el sistema te asigne. Con las donaciones que recibas, participarás en las siguientes PUERTAS."
+      },
+      {
+        "question": "¿Hay algún costo adicional?",
+        "answer": "Definitivamente NO, pero se invitará a todos los Donantes a asistir a eventos donde haremos Donaciones para diferentes necesidades en nuestras comunidades."
+      },
+      {
+        "question": "¿Cuándo debo hacer mis donaciones al convertirme en miembro de la FUNDACIÓN?",
+        "answer": "Implica que estás listo y de acuerdo en hacer tus donaciones al miembro que el sistema te asigne."
+      },
+      {
+        "question": "¿Cuándo debo enviar mi primera donación de $300 dólares?",
+        "answer": "Una vez que actives la FUNDACIÓN, enviarás tu primera donación. Recibirás un mensaje en tu correo electrónico con los detalles de la persona a la que debes hacer tus donaciones. El miembro que recibirá tu donación también será notificado por correo."
+      },
+      {
+        "question": "¿A quién debo enviar mis donaciones?",
+        "answer": "Solo a la persona que el sistema te indique; recuerda que esta persona será la única a la que dones siempre."
+      },
+      {
+        "question": "¿Puedo activar todas las PUERTAS al mismo tiempo?",
+        "answer": "Definitivamente NO, pero una vez que comiences a recibir tus primeras donaciones, puedes activar a todos tus familiares en México o en cualquier país del mundo donde estén."
+      },
+      {
+        "question": "¿Cuándo comenzaré a recibir donaciones?",
+        "answer": "Comenzarás a recibir donaciones después de tu registro."
+      },
+      {
+        "question": "¿Cómo sé a quién debo hacer mis donaciones iniciales?",
+        "answer": "Una vez que te unas al grupo, el sistema te enviará un correo con los detalles de la persona a la que debes hacer tus donaciones, así como información detallada en tu área de miembro activo."
+      },
+      {
+        "question": "¿Por qué medios debo hacer y recibir mis donaciones?",
+        "answer": "Una vez que sepas los detalles de la persona a la que debes hacer tus donaciones y de quién recibirás donaciones, debes contactarlo solo para agradecerle por estar en esta maravillosa Fundación."
+      },
+      {
+        "question": "¿El dinero o las donaciones deben enviarse a los Administradores del GRUPO?",
+        "answer": "Definitivamente no."
+      },
+      {
+        "question": "¿A cuántas personas se deben hacer donaciones?",
+        "answer": "Solo se hace una donación en cada PUERTA; a cambio, se reciben 8 donaciones del mismo valor en cada PUERTA de tus 8 donantes personales todo el tiempo."
+      },
+      {
+        "question": "¿Qué pasa si no recibo la donación?",
+        "answer": "Si no recibes tu donación, ingresa a tu oficina virtual o área de miembros de 'www.openingdoorstolife.org' e informa a los administradores de inmediato. Resolverán el problema."
+      },
+      {
+        "question": "¿Qué pasa si una persona no hace una donación?",
+        "answer": "Si una persona no hace una donación, será terminada permanentemente."
+      },
+      {
+        "question": "Si algún donante no envía mi donación programada, ¿recibiré menos donaciones?",
+        "answer": "Definitivamente No. La Fundación detendrá la donación ya que todos los miembros deben recibir todas las donaciones establecidas por la Fundación."
+      },
+      {
+        "question": "¿Qué debo hacer después de enviar mi donación según lo acordado con el miembro correspondiente?",
+        "answer": "Solo tienes que dedicar una hora a tu Página Virtual para ver cuántas donaciones recibirás y contactar a los administradores solo si es necesario."
+      },
+      {
+        "question": "¿Qué debo hacer después de recibir las donaciones?",
+        "answer": "Después de recibir tus donaciones debes invitar a amigos, familiares u otros a participar y disfrutar de una barbacoa y registrarse para esta oportunidad."
+      },
+      {
+        "question": "¿Qué más debo hacer cuando reciba la donación o el dinero?",
+        "answer": "Cuando recibas tu donación, guarda el recibo o comprobante en caso de que haya algún problema."
+      },
+      {
+        "question": "¿Cuántos miembros puedo unir a la Fundación?",
+        "answer": "Puedes incluir a tantas personas como desees. Cuantas más personas incluyas, más rápido recibirás tus donaciones."
+      },
+      {
+        "question": "¿Hay un plazo para comenzar a recibir donaciones en cada puerta?",
+        "answer": "No hay límite de tiempo; tú decides si eres activo o pasivo."
+      },
+      {
+        "question": "¿Cuándo debo activar las puertas?",
+        "answer": "Las puertas se activan automáticamente una vez que te conviertas en miembro; para recibir donaciones en una puerta, debes estar activo."
+      },
+      {
+        "question": "¿Puedo unirme al GRUPO de forma gratuita?",
+        "answer": "Definitivamente NO; solo trabaja 3 días para ganar tu registro."
+      },
+      {
+        "question": "¿Puedo recibir donaciones sin haber pagado mi donación inicial?",
+        "answer": "Definitivamente NO."
+      },
+      {
+        "question": "¿En qué moneda se deben hacer las donaciones?",
+        "answer": "En dólares estadounidenses (USD). Si se hacen entre miembros de otro país, puede ser en moneda local según lo acordado por ambas partes."
+      },
+      {
+        "question": "¿Cómo manejo mi área de donantes y participo sin problema?",
+        "answer": "Una vez que des tu información para registrarte, recibirás toda la información en tu idioma para participar sin inconvenientes."
+      },
+      {
+        "question": "¿Personas de qué países pueden participar en 'www.openingdoorstolife.org'?",
+        "answer": "Personas de todos los países del mundo pueden participar."
+      },
+      {
+        "question": "¿Debo pagar impuestos en mi país por las donaciones recibidas en la Fundación?",
+        "answer": "En los Estados Unidos, no se pagan impuestos por recibir donaciones. Consulta en tu país si necesitas pagar por donaciones recibidas."
+      },
+      {
+        "question": "¿Puedo ser Donante más de una vez?",
+        "answer": "Puedes ser Donante tantas veces como desees. Pregúntanos cómo hacerlo."
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Estamos aquí para ayudarte",
+    "mail": "Correo",
+    "mailValue": "contact@openingdoorstolife.org",
+    "address": "Dirección",
+    "addressValue": "3693 NW 8th Ave, Okeechobee, FL 34972",
+    "phone": "Teléfono",
+    "phoneValue": "(863) 623-4220 (Oficina)",
+    "service": "Servicio",
+    "serviceValue": "Servicio 24/7",
+    "form": {
+      "namePlaceholder": "Ingresa tu nombre",
+      "phonePlaceholder": "Número de teléfono",
+      "emailPlaceholder": "Ingresa tu correo electrónico",
+      "commentsPlaceholder": "Tus comentarios y preguntas",
+      "submitButton": "Enviar"
+    }
+  },
+
+  "email": "Correo electrónico",
+  "password": "Contraseña",
+  "enterEmail": "Introduce tu correo electrónico",
+  "enterPassword": "Introduce tu contraseña",
+  "loginButton": "Iniciar sesión",
+  "loginInProgress": "Iniciando sesión...",
+  "loginSuccess": "¡Inicio de sesión exitoso! 🎉",
+  "loginError": "Error al iniciar sesión. Verifica el correo o la contraseña",
+  "errorMessage": "Por favor ingresa tu correo o contraseña",
+
+  "signUp": {
+    "title": "Regístrate",
+    "ref": "Proporcione un código de referencia válido antes del pago",
+    "username": "Nombre de usuario",
+    "phone": "Teléfono",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "paypal": "PayPal",
+    "referralCode": "Código de referido",
+    "register": "Registrarse",
+    "paymentRequired": "¡Pago requerido!",
+    "paymentCompleted": "¡Pago completado!",
+    "provideAllData": "Por favor, proporcione todos los datos",
+    "emailAlreadyExist": "El correo electrónico ya existe",
+    "accountCreated": "Cuenta creada exitosamente"
+  },
+  "doorPages": {
+    "welcomeVideo": "Video de Bienvenida",
+    "register": "Registrarse",
+    "workGroup": "Grupo de trabajo",
+    "receiveGifts": "Recibir regalos",
+    "sendGifts": "Enviar regalos",
+    "printCertificate": "Imprimir certificado",
+    "informationOnDonations": "Información sobre donaciones",
+    "infoDoors": "Puertas de información",
+    "doors": {
+      "1": "Puerta № 1 el regalo será de $50 y recibirás $400 de tu equipo de 8  personas que se encuentran al final de las 15 personas, quienes también te enviaran $50 cada uno para un total de $400. Reservar $200  para la puerta № 2. Toma $100. Y $100 serán enviados a la fundación. Cómo llevar cualquier negocio de  buenos a extraordinarios. En esta base  de 14 Puertas, moldeamos el presente  de todos los jóvenes de hoy, para que  vivan una vida extraordinaria",
+      "2": "Puerta № 2 Enviaras $200 y recibirás $1,600 siempre de los 8 que  son de tu equipo; reservar $600 para la Puerta № 3. Toma $500  para ti. El resto serán enviados a la fundación. Estimados jóvenes:  Bienvenido al manual de su  inicio Exitoso.  Hágase tres preguntas:  1) ¿Funciona?  2) ¿Es sencillo?  3) ¿Yo lo puedo hacer?  (La clave invitar para escuchar)",
+      "3": "Puerta № 3: Enviaras $600 y recibirás $4,800 de tu equipo de las 8  personas que les con responde enviarte; reservar $1,800 para la  Puerta № 4 Toma $1,500 para ti. El resto serán enviados a la fundación. 1) Lo que NO requerimos:  2) No hay limites para dar regalos  3) No hay cuotas mensuales  4) No hay horarios obligatorios  5) No hay renovaciones anuales  6) No hay empleados ni patrones  7) Sea generoso con sus regalos",
+      "4": "Puerta № 4 enviaras $1,800 y recibirás $14,400 reservar $3,000 para la puerta № 5 Toma $6,500  para ti.  El resto serán enviado a la fundación. Actúa hoy y por cada membresía gana hasta $100,000.",
+      "5": "Puerta № 5 enviaras $3,000 y recibirás $24,000, reservar $4,000  para la Puerta № 6. Toma $10,000 para ti.  Lo demás envíalo a la fundación. Queridas jovencitas y queridos jóvenes, si sois inteligentes, aquí podrán vivir una vida extra ordinaria.",
+      "6": "Puerta № 6: Enviaras $4,000 y recibirás $32,000, reservar $12,000  para completar la Puerta № 7. Toma $10,000.  Para ti. Lo demás envíalo a la fundación ",
+      "7": "Puerta № 7 y recibirás $96,000. Toma $21,400 para ti. Lo demás será  envíalo a la fundación. Has recibido de la puerta 1 a la puerta 7 $50,000 ",
+      "8": "Puerta № 8 el regalo será de $50 y recibirás $400 de tu equipo  de 8 personas que se encuentran al final de las 15 personas, quienes también te enviaran $50 cada uno para un total de $400. Reservar $200  para la puerta № 2. Y $100 para ti. Y $100 serán enviados a la fundación",
+      "9": "Puerta № 9: Enviaras $200 y recibirás $1,600 siempre de los 8  que son de tu equipo; reservar $600 para la puerta № 10 en la  puerta № 9: Toma $500 para ti. Lo demás envíalo a la fundación. ",
+      "10": "Puerta № 10 enviaras $600 y recibirás $4,800 de tu equipo de 8  personas que les con responde enviarte; reservar $1,800  para la Puerta № 11. Puerta № 10 toma $1,500.  Para ti el resto envíalo a la fundación. ",
+      "11": "Puerta № 11 enviaras $1,800 y recibirás $14,400 reservar $3,000  para la puerta № 12. Puerta № 11 toma $6,500.  Para ti el resto envíalo a la fundación.",
+      "12": "Puerta № 12 enviaras $3,000 y recibirás $24,000, reservar $4,000  para la Puerta № 13. Puerta № 12 toma $10,000.  Para ti el resto envíalo a la fundación.",
+      "13": "Puerta № 13. Enviaras $4,000 y recibirás $32,000, reservar $12,000  para completar la Puerta № 14. Puerta № 13 toma $10,000  para ti el resto envíalo a la fundación. ",
+      "14": "Puerta № 14 y recibirás $96,000,00 al completar la puerta № 14.  Reiniciaremos en la puerta 1 como lo hicimos al principio.  Puerta № 14. Toma $21,400 para ti el resto envíalo a la fundación"
+    }
+  },
+
+  "videoTitle": "¿Cómo registrarse?",
+  "videoDescription": "Entras por invitación directa de un donante de la fundación, la donación inicial es de $312.",
+  "videoContent": "Necesitas una dirección de correo electrónico, número de teléfono, un nombre de usuario y una contraseña para tu cuenta.",
+  "videoFooter": "El único requisito es invitar a 2 o más personas a registrarse y convertirse en tu invitado.",
+  "workGroupTitle": "Grupo de Trabajo:",
+  "workGroupDescription": "Esta opción se puede usar para crear tu Grupo (8 miembros) para las '14 PUERTAS'.",
+  "workGroupContent": "Y para ver todos los miembros que pertenecen a tu Grupo de Trabajo.",
+  "viewWorkGroupButton": "VER GRUPO DE TRABAJO",
+
+  "loading": "Cargando...",
+  "viewGiftsTitle": "VER MIS REGALOS",
+  "viewGiftsDescription": "Debes completar cada una de las Puertas en orden del 1 al 14.",
+  "currentDoorLabel": "Puerta Actual:",
+  "door": "PUERTA",
+  "allDoorsCompleted": "TODAS LAS PUERTAS COMPLETADAS",
+  "sendGiftsTitle": "ENVIAR REGALOS",
+  "sendGiftsDescription": "Esta opción se puede utilizar para enviar un regalo.",
+  "sendGiftsInstructions": "Haz clic en el botón para confirmar el envío del regalo.",
+  "sendGiftTo": "ENVIAR REGALO A",
+  "printCertificateTitle": "Imprimir Certificado",
+  "printCertificateDescription": "Imprima su Certificado de Membresía \"Opening Doors to Life\"",
+  "printCertificateInstructions": "Haga clic en el botón para imprimir el certificado",
+  "print": "Imprimir",
+  "certificateHeader": "CERTIFICADO DE DONACIONES DE:",
+  "certificateUsernamePhone": "{{username}} TEL: {{phone}}",
+  "certificateWebsite": "www.openingdoorstolife.org",
+  "certificateAddress1": "3693 NW 8TH AVE OKEECHOBEE",
+  "certificateAddress2": "FLORIDA 34972",
+  "certificateEmail": "CORREO ELECTRÓNICO: {{email}}",
+  "certificateMainText": "Estimado Señor o Señora: Bienvenidos a la Fundación Cultural Hispano-Americana,",
+  "certificateSecondLine": "Registrada en los Estados Unidos bajo la licencia 501(c)(3) para dar ayuda a las",
+  "certificateThirdLine": "Comunidades, etc. Fecha de Registración: 2021-07-18 Número de Registro: 1",
+  "certificateCredentials": "Nombre de Usuario: {{username}} ID de Usuario: {{userId}}",
+  "certificateFooter1": "(Con ésta actividad no les fallamos a las personas; las personas le fallan a ésta",
+  "certificateFooter2": "actividad)",
+  "certificateFooter3": "Acordamos que una copia o fax es considerada legal y válida al igual que una",
+  "certificateFooter4": "original.",
+
+  "informationOnDonationsTitle": "INFORMACIÓN SOBRE DONACIONES",
+  "learnMore": "Saber más",
+  "Donator 'Your' Time Has come": "Donante 'Tu' tiempo ha llegado",
+  "Donate today for the home": "Done hoy para el hogar",
+  "Pay for your Funeral": "Paga tu funeral",
+  "Register your PETS": "Registra tus MASCOTAS",
+  "Open a door in my life donor": "Abre una puerta en mi vida donante",
+  "We at Opening Doors to Life welcome you as a DONOR": "En Opening Doors to Life te damos la bienvenida como DONANTE",
+  "Birth of your baby": "Nacimiento de tu bebé",
+  "Children Qualified for a Scholarship": "Niños calificados para una beca",
+  "YOUR REWARD FOR BEING A DONOR": "TU RECOMPENSA POR SER UN DONANTE",
+  "Donation of $10,000": "Donación de $10,000",
+
+  "Donator 'Your' Time Has come description": "Teléfono: (863) 623-4220 Done hoy",
+  "Donate today for the home description": "Done hoy para el hogar de Caramicuas. Teléfono: (863) 623-4220",
+  "Pay for your Funeral description": "Pagamos por tu funeral siendo un donante de la Fundación.",
+  "Register your PETS description": "Ahora puedes registrar tus mascotas. Solo tienes que ponerles 2 invitados. Que sean personas.",
+  "Open a door in my life donor description": "Done para los sin hogar. Teléfono: (863) 623-4220",
+  "We at Opening Doors to Life welcome you as a DONOR description": "Done para los sin hogar. Teléfono: (863) 623-4220",
+  "Birth of your baby description": "Tener miedo de dar a luz, o tener miedo de los dolores del parto, es completamente normal. Sin embargo, el poder del pensamiento positivo es increíble y puede transformar ese miedo en energía positiva para dar a luz a tu bebé. Ahora recibirás una donación de $10,000 por cada bebé que des a luz.",
+  "Children Qualified for a Scholarship description": "Los niños que se inscriban por sus padres califican para una beca de $50,000 con un GPA mínimo de 2.5.",
+  "YOUR REWARD FOR BEING A DONOR description": "Al completar la puerta № 14, pídenos que hagamos tu nuevo hogar. Donado por la fundación y sin facturas de electricidad.",
+  "Donation of $10,000 description": "Donación de $10,000 para fiestas de 15 años, bodas y más.",
+"Bienvenido a Opening Doors 2 Life": "Bienvenido a Opening Doors 2 Life",
+  "Opening Doors to Life": "Abriendo puertas a la vida",
+  "DOOR-1": "PUERTA-1",
+  "DOOR-2": "PUERTA-2",
+  "DOOR-3": "PUERTA-3",
+  "DOOR-4": "PUERTA-4",
+  "DOOR-5": "PUERTA-5",
+  "DOOR-6": "PUERTA-6",
+  "DOOR-7": "PUERTA-7",
+  "DOOR-8": "PUERTA-8",
+  "DOOR-9": "PUERTA-9",
+  "DOOR-10": "PUERTA-10",
+  "DOOR-11": "PUERTA-11",
+  "DOOR-12": "PUERTA-12",
+  "DOOR-13": "PUERTA-13",
+  "DOOR-14": "PUERTA-14",
+
+  "DOOR-1 description": "En la puerta № 1 la donación será de $300 y recibiremos $2,400 de su equipo de 8 personas que están en la parte inferior de su grupo de 15. Ahora reservaremos $900 para la próxima donación PARA LA PUERTA № 2. Y a usted le donaremos $750.",
+  "DOOR-2 description": "En la puerta № 2 la donación será de $900. Ahora 8 personas nos enviarán una donación de $900 cada una, haciendo un total de $7,200. No olvidemos reservar $1,200 para la próxima donación PARA LA PUERTA № 3 y a usted le donaremos $5,000.",
+  "DOOR-3 description": "En la puerta № 3 la tabla indica que debemos donar $1,200 y usted recibirá $9,600 de 8 personas que donarán $1,200 cada una. Reservaremos $4,600 para la próxima donación PARA LA PUERTA № 4. Y a usted le donaremos $7,000.",
+  "DOOR-4 description": "En la puerta № 4 donaremos $4,600 y recibiremos $36,800 de los 8 donantes que donarán $4,600 cada uno a usted; (reservaremos $6,800 para la próxima donación) PARA LA PUERTA № 5. Y a usted le donaremos $20,000.",
+  "DOOR-5 description": "En la PUERTA № 5 donaremos $6,800 y recibiremos $54,400 de los 8 Donantes que son de su equipo; (reservaremos $9,400 para la próxima donación). PARA LA PUERTA № 6. Y le donaremos $20,000.",
+  "DOOR-6 description": "En la puerta № 6 donaremos $9,400 y recibiremos $75,200 de su equipo de 8 donantes que enviarán $9,400 cada uno (reservaremos $15,200 para terminar la puerta № 7). Y le donaremos $24,000.",
+  "DOOR-7 description": "En la puerta № 7 donaremos $15,200 y recibiremos $121,600 cada uno de $15,200 de su equipo de 8 donantes que se emparejarán para donar a usted. Al final recibiremos $121,600. Y le donaremos $24,000.",
+  "DOOR-8 description": "En la puerta № 8 usted donará $10,000 y 8 donantes nos donarán $10,000 para un total de $80,000. Le devolveremos su donación en la puerta № 8 de $10,000. Ahora donaremos $900 para la próxima donación para la puerta № 9. Ahora donaremos para usted en cada puerta.",
+  "DOOR-9 description": "En la puerta № 9 donaremos $900 ahora 8 donantes donarán $900 cada uno, haciendo un total de $7,200. Reservaremos $1,200 para la próxima donación PARA LA PUERTA № 10. A usted le donaremos $5,000.",
+  "DOOR-10 description": "En la puerta № 10 donaremos $1,200 y recibiremos $9,600 del equipo de 8 que donarán $1,200 cada uno. Reservaremos $4,600 para la próxima donación PARA LA PUERTA № 11. A usted le donaremos $7,000.",
+  "DOOR-11 description": "En la puerta № 11 donaremos $4,600 y recibiremos $36,800 de 8 donantes que donarán $4,600 cada uno; (reservaremos $6,800 para la próxima donación) PARA LA PUERTA № 12. Le donaremos $20,000.",
+  "DOOR-12 description": "En la PUERTA № 12 donaremos $6,800 y recibiremos $54,400 de su equipo de 8 donantes; (reservaremos $9,400 para la próxima donación). PARA LA PUERTA № 13. Le donaremos $20,000.",
+  "DOOR-13 description": "En la puerta № 13 donaremos $9,400 y recibiremos $75,200 de sus 8 donantes que donarán $9,400 cada uno (reservaremos $15,200 para terminar la PUERTA #14). Le donaremos $24,000.",
+  "DOOR-14 description": "En la puerta № 14 donaremos $15,200 y recibiremos $121,600 de cada uno de $15,200 de su equipo de 8 donantes que donarán permanentemente. AL FINAL RECIBIREMOS $121,600. Usted recibirá un total de $100,000. Desde la puerta 8 hasta la puerta 14.",
+
+  "Referral Tree": "Árbol de Referencias",
+  "Go Back": "Volver",
+  "Founder": "Fundador",
+  "1st Gen": "1ra Generación",
+  "2nd Gen": "2da Generación",
+  "3rd Gen": "3ra Generación",
+  "Complete your 3rd Generation & Send donations request By Clicking on it": "Complete su solicitud de donaciones de 3rd generación y envíela haciendo clic en ella",
+  "Gifts To Receive": "Regalos Por Recibir",
+  "Request": "Solicitud",
+  "Amount": "Monto",
+  "No Request Found": "No Se Encontraron Solicitudes",
+  "No Request Message": "Parece que no hay solicitudes en este momento. Por favor, regresa más tarde.",
+  "Pending": "Pendiente",
+  "Waiting For Approval": "Esperando Aprobación",
+  "Paid": "Pagado",
+  "Door": "Puerta",
+
+  "Manage Your Gifts and Payments": "Manage Your Gifts and Payments",
+
+  "From": "From",
+  "Email": "Email",
+  "Phone#": "Phone#",
+  "Sending request and waiting for approval...": "Sending request and waiting for approval...",
+  "Sent successfully and waiting for approval!": "Sent successfully and waiting for approval!",
+  "Already waiting for approval or request failed.": "Already waiting for approval or request failed.",
+
+  "Admin Dashboard": "Panel de Administración",
+  "Manage your platform efficiently": "Gestiona tu plataforma de manera eficiente",
+  "Admin Profile": "Perfiles de administración",
+  "Manage user accounts": "Gestionar cuentas de usuario",
+  "Referrals Tree": "Árbol de Referencias",
+  "View and manage referrals": "Ver y gestionar referencias",
+  "Main Bank": "Banco Principal",
+  "Track finances": "Rastrear finanzas",
+  "See Single User": "Ver un solo usuario",
+  "Single User Detail": "Detalle de un solo usuario",
+
+  "Enter your email": "Ingresa tu correo electrónico",
+  "Password": "Contraseña",
+  "Enter your password": "Ingresa tu contraseña",
+  "Login": "Iniciar sesión",
+  "Logging in...": "Iniciando sesión...",
+  "Login successful! 🎉": "¡Inicio de sesión exitoso! 🎉",
+  "Login failed. Please check your credentials.": "Error al iniciar sesión. Por favor, verifica tus credenciales.",
+  "An error occurred": "Ocurrió un error",
+  "Admin Panel": "Panel de administración",
+  "Logout": "Cerrar sesión",
+  "footerText": "Todos los derechos reservados",
+
+  "goBack": "Volver",
+  "adminPanel": "Panel de Admin",
+  "completeProgress": "Progreso Completo",
+  "totalDonations": "Donaciones Totales",
+  "doorStatus": "Estado de la Puerta",
+  "unlocked": "Desbloqueado",
+
+  "locked": "Bloqueado",
+  "referralTree": "Árbol de Referencias",
+  "showFullTree": "Mostrar Árbol Completo",
+  "founder": "Fundador",
+  "firstGen": "1ra Gen",
+  "secondGen": "2da Gen",
+  "thirdGen": "3ra Gen",
+  "yourBankBalance": "Tu saldo bancario",
+  "stayOnTop": "Mantente al tanto de tus finanzas con actualizaciones en tiempo real.",
+  "viewTransactions": "Ver transacciones",
+  "recentTransactions": "Transacciones Recientes",
+  "stayUpdated": "Mantente actualizado con tu última actividad",
+  "noTransactions": "No hay transacciones disponibles",
+  "yourAmount": "Tu Cantidad",
+  "sendDonationRequest": "Enviar Solicitud de Donación",
+  "searchUserByEmail": "Ingrese  Correo ",
+  "emailPlaceholder": "Introduce el correo electrónico",
+  "errorFetchingUserData": "Error al obtener los datos del usuario. Verifica el correo o intenta nuevamente más tarde.",
+  "userProfile": "'s Perfil",
+  "phone": "Teléfono",
+  "referralCode": "Código de referido",
+  "donationAmount": "Monto de la donación",
+  "open": "Abierto",
+  "closed": "Cerrado"
+}

@@ -26,7 +26,6 @@ const AdminPanel = () => {
             {t("Manage your platform efficiently")} {/* Translated text */}
           </p>
         </header>
-
         <main className="flex flex-col items-center justify-center px-4 mt-16 lg:mt-[9rem]">
           <div className="grid w-full max-w-4xl grid-cols-1 gap-6 md:grid-cols-3">
             <button
@@ -40,7 +39,6 @@ const AdminPanel = () => {
               </p>{" "}
               {/* Translated text */}
             </button>
-
             <button
               className="flex flex-col items-center justify-center px-6 py-4 transition transform rounded-lg shadow-lg bg-grassGreen hover:scale-105"
               onClick={() => navigate("/admin/dashboard/mainBank")}
@@ -64,6 +62,8 @@ const AdminPanel = () => {
               {/* Translated text */}
             </button>
           </div>
+          
+
         </main>
       </div>
       <Footer />

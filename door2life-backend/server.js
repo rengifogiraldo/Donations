@@ -10,10 +10,18 @@ const userRoutes = require("./Routes/User-router/userRouter");
 const bankRoutes = require("./Routes/bank-Router/bankRouter");
 const messageRoutes = require("./Routes/Messgae-Router/messageRouter");
 const contactRouter = require("./Routes/Contact-Router/contactRouter");
+const bodyParser = require("body-parser");
+const morgan = require("morgan");
+var colors = require('colors');
+
 const app = express();
 dotenv.config();
 const PORT = 8000;
+
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(morgan("dev"));
 app.use(
   cors({
     origin: [
@@ -45,8 +53,9 @@ app.use("/api/user", userRoutes);
 app.use("/api/messages", messageRoutes);
 app.use("/api/bank", bankRoutes);
 app.use("/api/contact", contactRouter);
+
 connectDb().then(() => {
   app.listen(PORT, () => {
-    console.log(`hello from the server side ${PORT}`);
+    console.log(` Server is running on port ${PORT} `.bgGreen.white);
   });
 });

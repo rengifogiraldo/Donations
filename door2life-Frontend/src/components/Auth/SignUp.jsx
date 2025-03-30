@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
@@ -92,10 +92,12 @@ const SignUp = () => {
     }
   }, [name, email, password, phone, t]);
 
-  const handleRegister = async () => {
+  const handleRegister = async (e) => {
+    e.preventDefault();
+
     // Para pago manual, establecemos un valor fijo de 50
     const amount = paymentMethod === "manual" ? 50 : paypalAmount;
-    
+
     const registerData = {
       username: name,
       password: password,
@@ -120,11 +122,13 @@ const SignUp = () => {
           registerData,
         ),
         {
-          success: paymentMethod === "manual" 
-            ? t("signUp.accountCreatedPending") 
+          success: paymentMethod === "manual"
+            ? t("signUp.accountCreatedPending")
             : t("signUp.accountCreated"),
           error: {
             render({ data }) {
+              console.log(data);
+              
               return (
                 data?.response?.data?.Error || "Failed to create an account."
               );
@@ -164,7 +168,7 @@ const SignUp = () => {
             {t("signUp.title")}
           </h2>
 
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleRegister}>
             {/* Username Input */}
             <div>
               <label
@@ -221,7 +225,7 @@ const SignUp = () => {
                 placeholder={t("signUp.email")}
               />
               {error === t("signUp.emailAlreadyExist") ||
-              error === t("signUp.provideAllData") ? (
+                error === t("signUp.provideAllData") ? (
                 <p className="text-red-600 ">{error}</p>
               ) : null}
             </div>
@@ -316,41 +320,41 @@ const SignUp = () => {
                 </>
               ) : (
                 <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
-  <h3 className="font-medium text-blue-700 mb-2">{t("Manual Payment Instructions")}</h3>
-  <p className="text-sm mb-2">
-    {t("Please send $50 to one of the following payment methods:")}
-  </p>
-  <ul className="list-disc pl-5 text-sm">
-    <li className="mb-1">
-      <span className="font-medium">Zelle</span>
-    </li>
-    <li className="mb-1">
-      <span className="font-medium">Bank Transfer</span>
-    </li>
-  </ul>
-  <p className="text-sm mt-2 text-blue-700">
-    {t("Important: Your account will be pending until we verify your payment.")}
-  </p>
-  
-  {/* Spanish version */}
-  <hr className="my-3 border-blue-200" />
-  
-  <h3 className="font-medium text-blue-700 mb-2">Instrucciones de Pago Manual</h3>
-  <p className="text-sm mb-2">
-    Envíe $50 a través de uno de los siguientes métodos de pago:
-  </p>
-  <ul className="list-disc pl-5 text-sm">
-    <li className="mb-1">
-      <span className="font-medium">Zelle</span>
-    </li>
-    <li className="mb-1">
-      <span className="font-medium">Transferencia Bancaria</span>
-    </li>
-  </ul>
-  <p className="text-sm mt-2 text-blue-700">
-    Importante: Su cuenta estará pendiente hasta que verifiquemos su pago.
-  </p>
-</div>
+                  <h3 className="font-medium text-blue-700 mb-2">{t("Manual Payment Instructions")}</h3>
+                  <p className="text-sm mb-2">
+                    {t("Please send $50 to one of the following payment methods:")}
+                  </p>
+                  <ul className="list-disc pl-5 text-sm">
+                    <li className="mb-1">
+                      <span className="font-medium">Zelle</span>
+                    </li>
+                    <li className="mb-1">
+                      <span className="font-medium">Bank Transfer</span>
+                    </li>
+                  </ul>
+                  <p className="text-sm mt-2 text-blue-700">
+                    {t("Important: Your account will be pending until we verify your payment.")}
+                  </p>
+
+                  {/* Spanish version */}
+                  <hr className="my-3 border-blue-200" />
+
+                  <h3 className="font-medium text-blue-700 mb-2">Instrucciones de Pago Manual</h3>
+                  <p className="text-sm mb-2">
+                    Envíe $50 a través de uno de los siguientes métodos de pago:
+                  </p>
+                  <ul className="list-disc pl-5 text-sm">
+                    <li className="mb-1">
+                      <span className="font-medium">Zelle</span>
+                    </li>
+                    <li className="mb-1">
+                      <span className="font-medium">Transferencia Bancaria</span>
+                    </li>
+                  </ul>
+                  <p className="text-sm mt-2 text-blue-700">
+                    Importante: Su cuenta estará pendiente hasta que verifiquemos su pago.
+                  </p>
+                </div>
               )}
             </div>
 
@@ -378,8 +382,7 @@ const SignUp = () => {
             {/* Register Button */}
             <div className="flex justify-center">
               <button
-                type="button"
-                onClick={handleRegister}
+                type='submit'
                 className="w-[150px] py-2 px-2 bg-grassGreen hover:bg-darkGreen text-black font-semibold rounded-lg transition duration-200 mt-4"
               >
                 {t("signUp.register")}

@@ -34,34 +34,33 @@ const adminRegister = async (req, res) => {
 const adminLogin = async (req, res) => {
   try {
     const { email, password } = req.body;
-
     if (!email || !password) {
       return res
         .status(400)
         .json({ Error: "Please Provide Email and Password" });
     }
-
+    
     const adminExist = await Admin.findOne({ email });
+
     if (!adminExist) {
       return res.status(400).json({
         Error: "Admin email not found, please contact support",
       });
     }
 
-    const isMatch = await bcrypt.compare(password, adminExist.password);
-
+    const isMatch = await bcrypt.compare(password, adminExist?.password);
     if (isMatch) {
-      res.status(200).json({
+      return res.status(200).json({
         successMessage: "Admin login successful",
         token: await adminExist.generateToken(),
         adminId: adminExist._id,
         admin: adminExist,
       });
     } else {
-      res.status(400).json({ Error: "Invalid email or password" });
+      return res.status(400).json({ Error: "Invalid email or password" });
     }
   } catch (error) {
-    res.status(500).json({ Error: "Server Error" });
+    return res.status(500).json({ Error: "Server Error" });
     console.log(error);
   }
 };

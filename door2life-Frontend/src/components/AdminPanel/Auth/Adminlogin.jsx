@@ -40,7 +40,7 @@ const AdminLogin = () => {
           loginData,
         ),
         {
-          pending: t("Logging in..."),
+          pending: t("Logging in..."), 
           success: t("Login successful! 🎉"),
           error: t("Login failed. Please check your credentials."),
         },

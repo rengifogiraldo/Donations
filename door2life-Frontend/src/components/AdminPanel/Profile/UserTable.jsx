@@ -101,7 +101,7 @@ const UserTable = () => {
   };
 
   const downloadExcel = () => {
-    const excelData = users.map((user, index) => ({
+    const excelData = users?.map((user, index) => ({
       "Sr#": index + 1,
       Username: user.username,
       Email: user.email,
@@ -169,7 +169,7 @@ const UserTable = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {users.map((user, index) => {
+              {users?.map((user, index) => {
                 const maxDoor = getMaxOpenDoor(user.doorStatus);
 
                 return (

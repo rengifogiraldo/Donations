@@ -1,172 +1,242 @@
-const User = require("../../models/user-model");
-const bcrypt = require("bcryptjs");
-const MainBank = require("../../models/bank-Model");
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-//!Home -Router
-const home = async (req, res) => {
-  try {
-    res.status(200).send("hello from the server using control");
-  } catch (error) {
-    res.status(404).json("not found");
-  }
-};
-
-//!Register -Router
-const register = async (req, res) => {
-  try {
-    const { 
-      username, 
-      password, 
-      email, 
-      phone, 
-      referralCode, 
-      amount, 
-      paymentMethod, 
-      paymentStatus 
-    } = req.body;
-
-    if (
-      !username ||
-      !password ||
-      !email ||
-      !phone ||
-      !referralCode
-    ) {
-      return res.status(400).json({ Error: "Please Provide All Data" });
-    }
-
-    // Check if email is already used
-    const userExist = await User.findOne({ email });
-    if (userExist) {
-      return res.status(400).json({ Error: "Email Already Exists" });
-    }
-
-    // Generate a unique referral code (e.g., a short random string)
-    const generatedReferralCode = Math.random().toString(36).substring(2, 8);
-
-    // Hash the password explicitly here
-    const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash(password, salt);
-    console.log(`Contraseña original: ${password}`);
-    console.log(`Contraseña hasheada: ${hashedPassword}`);
-
-    // Create a new user with the hashed password
-    const newUser = new User({
-      username,
-      password: hashedPassword, // Usar la contraseña hasheada explícitamente
-      email,
-      phone,
-      amount: amount || 50, // Default to $50 if not provided
-      referralCode: generatedReferralCode,
-      paymentMethod: paymentMethod || 'paypal', // Default to PayPal
-      paymentStatus: paymentStatus || 'completed' // Default to completed for PayPal
-    });
-
-    // If a referral code was provided, link the accounts
-    if (referralCode) {
-      const referrer = await User.findOne({ referralCode });
-
-      if (referrer) {
-        if (referrer.referredBy.length >= 2) {
-          return res.status(400).json({
-            Error:
-              "Referral code limit reached. Cannot use this referral code.",
-          });
-        }
-
-        referrer.referredBy.push(newUser._id);
-        await referrer.save();
-      } else {
-        return res.status(400).json({ Error: "Invalid Referral Code" });
-      }
-    }
-
-    // Desactivar el middleware pre-save para evitar un doble hashing
-    newUser.$skipMiddleware = true;
-
-    // Save the new user
-    await newUser.save();
-
-    // Verificar que la contraseña se haya guardado correctamente
-    const savedUser = await User.findOne({ email });
-    const passwordMatch = await bcrypt.compare(password, savedUser.password);
-    console.log(`Verificación de contraseña después de guardar: ${passwordMatch}`);
-
-    // Save the donation to the Main Bank
-    const mainBankEntry = new MainBank({
-      name: username,
-      email: email,
-      amount: amount || 50,
-      paymentMethod: paymentMethod || 'paypal',
-      paymentStatus: paymentStatus || 'completed'
-    });
-
-    await mainBankEntry.save();
-
-    res.status(201).json({
-      successMessage: paymentMethod === 'manual' 
-        ? "Account created successfully. Your account will be activated once payment is verified." 
-        : "Successfully registered and created account",
-      userId: newUser._id,
-      referralCode: generatedReferralCode,
-      amount: newUser.amount,
-    });
-  } catch (error) {
-    console.error("Error during registration:", error);
-    res.status(500).json({ Error: "Server Error" });
-  }
-};
-
-//!Login -Router
-const login = async (req, res) => {
-  console.log("========== INTENTO DE LOGIN ==========");
-  console.log("Datos recibidos:", req.body);
-  const { email, password } = req.body;
+const CreateUser = () => {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
   
-  if (!email || !password) {
-    console.log("Email o contraseña faltantes");
-    return res.status(400).json({ error: "Email and password are required" });
-  }
+  const [formData, setFormData] = useState({
+    username: '',
+    phone: '',
+    email: '',
+    password: '',
+    referralCode: '',
+    paymentMethod: 'manual',
+    amount: 50,
+    paymentStatus: 'completed'
+  });
   
-  try {
-    console.log("Buscando usuario con email:", email);
-    const user = await User.findOne({ email });
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     
-    if (!user) {
-      console.log("Usuario no encontrado");
-      return res.status(404).json({ error: "User not found" });
+    if (!formData.username || !formData.phone || !formData.email || !formData.password || !formData.referralCode) {
+      toast.error('Please fill in all required fields');
+      return;
     }
     
-    console.log("Usuario encontrado:", user.email);
-    console.log("Contraseña proporcionada:", password);
-    console.log("Contraseña almacenada (hash):", user.password);
-    
-    // Intenta hacer login sin bcrypt primero
-    if (password === user.password) {
-      console.log("Login exitoso (coincidencia directa)");
-      return res.status(200).json({ message: "Login successful", user });
-    }
-    
-    // Si no coincide directamente, intenta con bcrypt
     try {
-      const isMatch = await bcrypt.compare(password, user.password);
-      console.log("¿Coinciden las contraseñas con bcrypt?", isMatch);
+      // Mostrar datos enviados para depuración
+      console.log('Sending data to backend:', formData);
       
-      if (!isMatch) {
-        console.log("Contraseña incorrecta");
-        return res.status(400).json({ error: "Incorrect password" });
-      }
+      // Usar el endpoint de registro normal
+      const response = await axios.post('/api/auth/register', formData);
       
-      console.log("Login exitoso (coincidencia con bcrypt)");
-      res.status(200).json({ message: "Login successful", user });
-    } catch (bcryptError) {
-      console.error("Error en bcrypt:", bcryptError);
-      return res.status(500).json({ error: "Error verifying password" });
+      toast.success(response.data.successMessage || 'User created successfully');
+      
+      // Reset form
+      setFormData({
+        username: '',
+        phone: '',
+        email: '',
+        password: '',
+        referralCode: '',
+        paymentMethod: 'manual',
+        amount: 50,
+        paymentStatus: 'completed'
+      });
+      
+      // Redirigir después de un breve retraso
+      setTimeout(() => {
+        navigate('/admin/dashboard/getUser');
+      }, 2000);
+      
+    } catch (error) {
+      console.error('Error creating user:', error);
+      const errorMessage = error.response?.data?.Error || 'Error creating user';
+      toast.error(errorMessage);
+      
+      // Mostrar detalles adicionales del error para depuración
+      console.log('Error details:', error.response?.data);
     }
-  } catch (error) {
-    console.error("Login error:", error);
-    res.status(500).json({ error: "Internal server error" });
-  }
+  };
+  
+  return (
+    <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+      <ToastContainer />
+      
+      {/* Botón Atrás con el color verde específico */}
+      <div className="mb-4">
+        <button 
+          onClick={() => navigate('/admin/dashboard')}
+          className="px-4 py-2 bg-grassGreen text-black rounded-md hover:bg-green-400 transition font-medium"
+        >
+          {t('Back')}
+        </button>
+      </div>
+      
+      <h2 className="text-2xl font-bold mb-6 text-center">{t('Create New User')}</h2>
+      
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {t('Username')} *
+          </label>
+          <input
+            type="text"
+            name="username"
+            value={formData.username}
+            onChange={handleChange}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            required
+          />
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {t('Phone')} *
+          </label>
+          <input
+            type="text"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            required
+          />
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {t('Email')} *
+          </label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            required
+          />
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {t('Password')} *
+          </label>
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            required
+          />
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {t('Referral Code')} *
+          </label>
+          <input
+            type="text"
+            name="referralCode"
+            value={formData.referralCode}
+            onChange={handleChange}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            placeholder={t('Enter the referral code of the inviting user')}
+            required
+          />
+          <p className="mt-1 text-sm text-gray-500">
+            {t('The referral code must exist in the system. Example: 73n1ih')}
+          </p>
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {t('Payment Method')} *
+          </label>
+          <div className="flex space-x-4">
+            <label className="inline-flex items-center">
+              <input
+                type="radio"
+                name="paymentMethod"
+                value="manual"
+                checked={formData.paymentMethod === 'manual'}
+                onChange={handleChange}
+                className="form-radio h-4 w-4 text-blue-600"
+              />
+              <span className="ml-2">{t('Manual Payment')}</span>
+            </label>
+            <label className="inline-flex items-center">
+              <input
+                type="radio"
+                name="paymentMethod"
+                value="paypal"
+                checked={formData.paymentMethod === 'paypal'}
+                onChange={handleChange}
+                className="form-radio h-4 w-4 text-blue-600"
+              />
+              <span className="ml-2">{t('PayPal')}</span>
+            </label>
+          </div>
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {t('Amount')}
+          </label>
+          <input
+            type="number"
+            name="amount"
+            value={formData.amount}
+            onChange={handleChange}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            min="1"
+            step="1"
+            required
+          />
+          <p className="mt-1 text-sm text-gray-500">
+            {t('Default donation amount is $50')}
+          </p>
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            {t('Payment Status')}
+          </label>
+          <select
+            name="paymentStatus"
+            value={formData.paymentStatus}
+            onChange={handleChange}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          >
+            <option value="completed">{t('Completed')}</option>
+            <option value="pending">{t('Pending')}</option>
+          </select>
+        </div>
+        
+        <div className="mt-6">
+          <button
+            type="submit"
+            className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          >
+            {t('Create User')}
+          </button>
+        </div>
+      </form>
+    </div>
+  );
 };
 
-module.exports = { home, register, login };
+export default CreateUser;
